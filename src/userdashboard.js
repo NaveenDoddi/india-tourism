@@ -4,11 +4,12 @@ import { data } from "./dataEmployee";
 function Yes(){
 
 
-    for(let i=0; i<100; i++){
-        console.log(data[i])
-    }
     return(
         <>
+            <p>.</p>
+            <p>.</p>
+            <p></p>
+            
             <Navbar />
 
             

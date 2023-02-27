@@ -7,14 +7,15 @@ import SignupDiv from './signupage';
 import Yes from './userdashboard';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from './navbar';
-
+// import Navbar from './navbar';
+import Table from './tabledata';
 
 export default function Run(){
   return(<>
     {/* <SignupDiv />
     <Logdiv /> */}
-    < Yes />
+    {/* < Yes /> */}
+    <Table />
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Logdiv />} />
