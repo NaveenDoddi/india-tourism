@@ -1,5 +1,5 @@
 
-const data = [
+const empdata1to20 = [
   {
     "first_name": "Elbertine",
     "last_name": "Gissing",
@@ -179,8 +179,8 @@ const data = [
     "salary": "$43192.18",
     "phone": "556 340 3162",
     "id": 20
-  },
-  {
+  }]
+  const empdata20to40 = [{
     "first_name": "Fancie",
     "last_name": "Learman",
     "email": "flearmank@rediff.com",
@@ -359,8 +359,8 @@ const data = [
     "salary": "$41780.51",
     "phone": "149 507 0878",
     "id": 40
-  },
-  {
+  }]
+  const empdata40to60 = [{
     "first_name": "Steven",
     "last_name": "Seifert",
     "email": "sseifert14@multiply.com",
@@ -539,8 +539,8 @@ const data = [
     "salary": "$29245.40",
     "phone": "916 175 2924",
     "id": 60
-  },
-  {
+  }]
+  const empdata60to80 = [{
     "first_name": "Candy",
     "last_name": "Eastway",
     "email": "ceastway1o@topsy.com",
@@ -719,8 +719,8 @@ const data = [
     "salary": "$20362.76",
     "phone": "707 229 3760",
     "id": 80
-  },
-  {
+  }]
+  const empdata80to100 = [{
     "first_name": "Gill",
     "last_name": "Jankovsky",
     "email": "gjankovsky28@utexas.edu",
@@ -899,8 +899,8 @@ const data = [
     "salary": "$43215.04",
     "phone": "774 278 2942",
     "id": 100
-  },
-  {
+  }]
+  const empdata101to1000=[{
     "first_name": "Gerianne",
     "last_name": "Barbara",
     "email": "gbarbara2s@kickstarter.com",
@@ -9001,4 +9001,4 @@ const data = [
     "id": 1000
   }
 ]
-export { data }
+export { empdata1to20,empdata20to40,empdata40to60,empdata60to80,empdata80to100 }

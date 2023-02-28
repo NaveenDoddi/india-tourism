@@ -1,12 +1,10 @@
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 function Navbar(){
     return(
         <>
             <nav class="navbar fixed-top navbar-expand navbar-light bg-light">
-                <div class=" navbar-toggleable-lg">
+                <div class=" navbar-toggleable">
                   <ul class="navbar-nav">
                     <li class="nav-item active">
                       <a class="nav-link" href="#">Home</a>
@@ -26,6 +24,8 @@ function Navbar(){
                   </ul>
                 </div>
             </nav>
+            <p>.</p>
+            <p>.</p>
         </>
     )
 }
