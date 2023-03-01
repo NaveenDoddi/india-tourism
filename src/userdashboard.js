@@ -1,11 +1,15 @@
 import React from "react";
 import Navbar from "./navbar";
+import PageNation from "./pagenation";
+import Table1 from "./empTable1";
 
-function Yes(){
+function Dashboard(){
     return(
         <>  
-            <Navbar />  
+            <Navbar />
+            <Table1 />
+            <PageNation />
         </>
     )
 }
-export default Yes
+export default Dashboard

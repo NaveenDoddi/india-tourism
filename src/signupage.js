@@ -1,9 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Logdiv from "./login";
-import { Route } from "react-router-dom";
 
-const Array1 = []
+const Array1 = [['naveen',123,"naveen",12062003,"male",'prasadnaveen847@gmailcom']]
 const SignupDiv=()=>{
     // return <h1>hi</h1>
     const stylesignupDiv={
@@ -31,7 +28,7 @@ const SignupDiv=()=>{
         }
     
     Array1.push(arr)
-    if (count<<6){alert("input is empty")}else{<Route path="/" element={<Logdiv />} />}
+    if (count<<6){alert("input is empty")}else{console.log(Array1);window.location.pathname = "";}
     
     }
     return (
@@ -47,7 +44,7 @@ const SignupDiv=()=>{
                     gender: <input list="gender" style={{width:"65px"}}/><br /><br />
                     Email: <input type={"email"} style={{width:"210px"}}/><br /><br />
                     
-                    <button onClick={Creating}> <Link to={"/"}>Create</Link></button> {/* give access to goto dashboard */}
+                    <button onClick={Creating}>Create</button> {/* give access to goto dashboard */}
 
                 </label>
             </div>
@@ -55,7 +52,6 @@ const SignupDiv=()=>{
                 <option value={"male"}></option>
                 <option value={"female"}></option>
                 <option value={"trans"}></option>
-
             </datalist>
         </>
     )

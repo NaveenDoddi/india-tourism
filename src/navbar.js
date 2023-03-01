@@ -3,27 +3,27 @@ import React from "react";
 function Navbar(){
     return(
         <>
-            <nav class="navbar fixed-top navbar-expand navbar-light bg-light">
-                <div class=" navbar-toggleable">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home</a>
+            <div className="navbar fixed-top navbar-expand navbar-light bg-light">
+                <div className="navbar-toggleable">
+                  <ul className="navbar-nav">
+                    <li className="nav-item active">
+                      <a className="nav-link" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Search</a>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">Search</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Notifications</a>
+                    <li className="nav-item">
+                      <a className="nav-link" href="/Logdiv">signin</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Messages</a>
+                    <li className="nav-item">
+                      <a className="nav-link" href="/signupDiv">signup</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="SignupDiv">☰</a>
+                    <li className="nav-item">
+                      <a className="nav-link" href="#">☰</a>
                     </li>
                   </ul>
                 </div>
-            </nav>
+            </div>
             <p>.</p>
             <p>.</p>
         </>
