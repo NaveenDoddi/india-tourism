@@ -8,12 +8,17 @@ import Table4 from "./empTable4";
 import Table5 from "./empTable5";
 
 function PageNation(){
+    var bodywidth = document.getElementsByClassName("table-responsive")[0].offsetWidth
+    const style = {
+        position:"relative",
+        left: (bodywidth/2)-92
+    }
     return(
         <>
         {/* <BrowserRouter> */}
            
         {/* </BrowserRouter> */}
-        <div className="pagination">
+        <div className="pagination" style={style}>
             <a href="">..</a>
             <a href="./Table1">1</a>
             <a href="Table2">2</a>
@@ -32,5 +37,4 @@ function PageNation(){
         </>
     )
 }
-
 export default PageNation

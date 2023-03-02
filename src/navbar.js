@@ -1,32 +1,32 @@
 import React from "react";
 
+
 function Navbar(){
-    return(
-        <>
-            <div className="navbar fixed-top navbar-expand navbar-light bg-light">
-                <div className="navbar-toggleable">
-                  <ul className="navbar-nav">
-                    <li className="nav-item active">
-                      <a className="nav-link" href="#">Home</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">Search</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="/Logdiv">signin</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="/signupDiv">signup</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">☰</a>
-                    </li>
-                  </ul>
-                </div>
-            </div>
-            <p>.</p>
-            <p>.</p>
-        </>
-    )
+  var bodywidth = document.getElementsByClassName("table-responsive")[0].offsetWidth
+  const style = {
+    width:bodywidth/5
+  }
+  return(
+    <>
+      <div className=" row" >
+          <div className="col-sm-2" id="nav" style={style}>
+            <a href="#">Home</a>
+          </div>
+          <div className="col-sm-2" id="nav" style={style}>
+            <a href="#">Search</a>
+          </div>
+          <div className="col-sm-2" id="nav" style={style}>
+            <a href="/Logdiv">signin</a>
+          </div>
+          <div className="col-sm-2" id="nav" style={style}>
+            <a href="/signupDiv">signup</a>
+          </div>
+          <div className="col-sm-2" id="nav" style={style}>
+            <a href="#">☰</a>
+          </div>
+      </div>
+      <p></p>
+    </>
+  )
 }
 export default Navbar
