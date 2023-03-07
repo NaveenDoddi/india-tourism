@@ -11,7 +11,7 @@ function PageNation(){
     var bodywidth = document.getElementsByClassName("table-responsive")[0].offsetWidth
     const style = {
         position:"relative",
-        left: (bodywidth/2)-92
+        left: (bodywidth/2)-112,
     }
     return(
         <>

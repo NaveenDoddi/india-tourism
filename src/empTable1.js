@@ -6,8 +6,9 @@ import './index.css';
 function Table1(){
     return(
         <>
-        <table className={"table"}>
+        <table className={"table table-hover table-light"}>
         <tr><td colSpan={6} style={{textAlign:"center"}}><h3>TABLE 1</h3></td></tr>
+            <tbody>
             <tr>
                 <th>id</th>
                 <th>first_name</th>
@@ -26,6 +27,8 @@ function Table1(){
                     <td>{i.phone}</td>
                 </tr>
             )}
+            </tbody>
+            
             
             
         </table>

@@ -3,9 +3,10 @@ import { empdata60to80 } from "./dataEmployee"
 function Table4(){
     return(
         <>
-        <table className="table">
+        <table className="table table-hover">
         <tr><td colSpan={6} style={{textAlign:"center"}}><h3>TABLE 4</h3></td></tr>
-            <tr>
+        <tbody>
+        <tr>
                 <th>id</th>
                 <th>first_name</th>
                 <th>last_name</th>
@@ -23,6 +24,9 @@ function Table4(){
                     <td>{i.phone}</td>
                 </tr>
             )}
+
+        </tbody>
+            
             
         </table>
             

@@ -4,8 +4,9 @@ import './index.css'
 function Table3(){
     return(
         <>
-        <table className="table">
+        <table className="table table-hover">
         <tr><td colSpan={6} style={{textAlign:"center"}}><h3>TABLE 3</h3></td></tr>
+            <tbody>
             <tr>
                 <th>id</th>
                 <th>first_name</th>
@@ -24,6 +25,8 @@ function Table3(){
                     <td>{i.phone}</td>
                 </tr>
             )}
+            </tbody>
+            
             
         </table>
             

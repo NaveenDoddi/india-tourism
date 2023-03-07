@@ -21,22 +21,27 @@
 .table tr{
   border: 2px solid black;
 }
-.table tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
+/* .table tr:nth-child(even) {
+  background-color: #827e7e;
+} */
 
 
 /* navbar */
 #nav{
   float: left;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 35px;
   width: 200px;
-  padding: 3px;
+  padding-top: 10px;
   text-align: center;
+  /* font-size:larger; */
 
 }
 
 div a{
   text-decoration: none;
+}
+@media screen and(max-width: 350px){
+  #id {
+    width: 75px;}
 }
