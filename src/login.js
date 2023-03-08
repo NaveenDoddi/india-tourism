@@ -8,7 +8,7 @@ import { Array1 } from "./signupage";
 const Logdiv=()=>{
     const styleLoginDiv ={
         height : "200px",
-        width : "300px",
+        width : "450px",
         border : "2px solid black",
         position : "relative",
         top : "300px",
@@ -16,33 +16,26 @@ const Logdiv=()=>{
         textAlign :"center",
         padding : "10px",
     }
-    function toCreate(){
-        window.location.pathname = "/SignupDiv";
-    }
+    
     
     function Checking(){
         var usernamedata = document.getElementById("usernameid").value
         var passworddata = document.getElementById("passwordid").value
-
-        if(usernamedata==="" && passworddata===""){
-            alert("input is empty");
+        
+        if(usernamedata=="1"){
+            if(passworddata=="1"){
+                window.location.pathname = "/run"
+                alert("login succes")
+                console.log("F")
+            }else{
+                alert("incorrect password")
+            }
             
         }
-        
-
-        for(let x=0; x<Array1.length; x++){
-            if(usernamedata==Array1[x][0]){
-                if(passworddata==Array1[x][1]){
-                    window.location.pathname = "/"
-                    console.log("F")
-                }else{
-                    alert("incorrect password")
-                }
-                
-            }
-           
-        }
-        
+         
+    }
+    function toCreate(){
+        window.location.pathname = "/SignupDiv";
     }
     
 
@@ -51,12 +44,23 @@ const Logdiv=()=>{
         <div style={styleLoginDiv}>
             
             <h4 style={{color : "red",textDecoration:"underline"}}>Login to GAME-TD</h4>
-            <label>
-                username: <input id="usernameid" type={"text"}/>
-                password : <input id="passwordid" type={"password"}/><br />
-                <span style={{visibility:"hidden"}}>invisi Span</span>
-                <button onClick={Checking}>signin</button><button onClick={toCreate}>signup</button>
-            </label><br/><br/>
+            <form className="needs-validation">
+                <div>
+                    <label for="username">Username: </label>
+                    <input type="text" class="." id="username" placeholder="@username" required/>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+                <div>
+                    <label for="password">Pass word: </label>
+                    <input type="password" class="." id="password" placeholder="password" required/>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                </div>
+                <button class="btn btn-sm" onClick={Checking}>signin</button><button class="btn" onClick={toCreate}>signup</button>
+            </form>
             
             <p>forgoten password: email</p>
         </div>

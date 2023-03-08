@@ -22,7 +22,7 @@ export default function Run(){
   
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/" element={<Logdiv />} />
           <Route path="/SignupDiv" element={< SignupDiv/>} />
           <Route path="/Logdiv" element={< Logdiv />} />
           <Route path="/Table1" element={<Table1 />} />

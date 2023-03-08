@@ -18,15 +18,18 @@ function PageNation(){
         {/* <BrowserRouter> */}
            
         {/* </BrowserRouter> */}
-        <div className="pagination" style={style}>
-            <a href="">..</a>
-            <a href="./Table1">1</a>
-            <a href="Table2">2</a>
-            <a href="Table3">3</a>
-            <a href="Table4">4</a>
-            <a href="Table5">5</a>
-            <a href="">..</a>
+        <div style={{width:"auto"}}>
+            <div className="pagination" style={style}>
+                <a href="">..</a>
+                <a href="./Table1">1</a>
+                <a href="Table2">2</a>
+                <a href="Table3">3</a>
+                <a href="Table4">4</a>
+                <a href="Table5">5</a>
+                <a href="">..</a>
+            </div>
         </div>
+        
             <Routes>
                 <Route path="pageNation/Table1" element={<Table1 />} />
                 <Route path="/Table2" element={<Table2 />} />

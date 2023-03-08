@@ -45,3 +45,6 @@ div a{
   #id {
     width: 75px;}
 }
+select,input{
+  height: 30px;
+}
