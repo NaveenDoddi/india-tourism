@@ -4,7 +4,7 @@ const Array1 = [['naveen',123,"naveen",12062003,"male",'prasadnaveen847@gmailcom
 function SignupDiv(){
   const stylesignupDiv={
     height : "465px",
-    width : "auto",
+    width : "420px",
     border : "2px solid black",
     position : "relative",
     top : "200px",
@@ -15,22 +15,23 @@ function SignupDiv(){
   
   function Creating(){
       
-      var arr = []
-      for(let i = 0; i<6; i++){  
-        var data = document.getElementsByTagName("input")[i].value
-        arr.push(data) 
-      }
+    var arr = []
+    for(let i = 0; i<6; i++){  
+      var data = document.getElementsByTagName("input")[i].value
+      arr.push(data) 
+    }
   
   Array1.push(arr)
   console.log(Array1)
-  // if (count<<6){alert("input is empty")}else{console.log(Array1);window.location.pathname = "";}
+  window.location.pathname = "";
+  
 
   }
   return (
     <>
         <div style={stylesignupDiv}>
         <h5 style={{color:"red", textDecoration:"underline"}}>Create account in GAME-TD</h5><p></p>
-        <form class="needs-validation col-auto" novalidate>
+        <form className="needs-validation col-auto">
           
           First Name: <input style={{width:"170px"}} required/><br /><br />
           Last Name: <input style={{width:"170px"}} required/><br /><br />
@@ -48,6 +49,7 @@ function SignupDiv(){
           <label class="form-check-label" for="invalidCheck"><small>Agree tosss terms and conditions</small><p></p></label>
           <div style={{textAlign:"right"}}><button class="btn btn-outline-success" type="button" onClick={Creating}>Create</button></div>
         </form>
+           
            
         </div>
         
