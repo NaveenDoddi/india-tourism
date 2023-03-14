@@ -25,6 +25,7 @@ function SignupDiv(){
   console.log(Array1)
   window.location.pathname = "";
   
+  
 
   }
   return (
