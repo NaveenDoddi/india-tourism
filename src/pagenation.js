@@ -7,11 +7,13 @@ import Table3 from "./empTable3";
 import Table4 from "./empTable4";
 import Table5 from "./empTable5";
 
+var offwidth = document.getElementById("table-responsiveness").offsetWidth
+console.log(offwidth)
 function PageNation(){
-    var bodywidth = document.getElementsByClassName("table-responsive")[0].offsetWidth
+    
     const style = {
         position:"relative",
-        left: (bodywidth/2)-112,
+        left: (offwidth/2)-112,
     }
     return(
         <>

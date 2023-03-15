@@ -1,18 +1,18 @@
 import React, { useRef } from "react";
 // import signupDiv from "./signupage";
-import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 
 import { Array1 } from "./signupage";
 
-
+var offwidth = document.getElementById("table-resposiveness").offsetWidth
+// console.log(offwidth)
 const Logdiv=()=>{
     const styleLoginDiv ={
         height : "200px",
-        width : "450px",
+        width : "350px",
         border : "2px solid black",
         position : "relative",
         top : "300px",
-        left : "100px",
+        left : (offwidth/2)-175,
         textAlign :"center",
         padding : "10px",
     }
@@ -24,7 +24,7 @@ const Logdiv=()=>{
         for(let i=0; i<Array1.length;i++){
             if(usernamedata==Array1[i][0]){
                 if(passworddata==Array1[i][1]){
-                    // window.location.pathname = ""
+                    window.location.pathname = ""
                     // alert("login succes")
                     console.log("F")
                 }else{
@@ -43,23 +43,36 @@ const Logdiv=()=>{
 
     return(
                 
-        <div style={styleLoginDiv}>
+        <table style={styleLoginDiv}>
+            <thead>
+                <tr>
+                    <td><h4 style={{color : "red",textDecoration:"underline"}}>Login to GAME-TD</h4></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                    <form className="needs-validation">
+                        <div>
+                            <label for="username">Username: </label>
+                            <input type="text" class="." id="usernameid" placeholder="@username" required/>
+                        </div>
+                        <div>
+                            <label for="password">Pass word: </label>
+                            <input type="password" class="." id="passwordid" placeholder="*******" required/>
+                        </div>
+                        <div className="btn-group"><button type="submit" class="btn" onClick={Checking}>signin</button><button class="btn" onClick={toCreate}>signup</button></div>
+                    </form>
+                    </td>
+                </tr>
+            </tbody>
+           <tfoot>
+            <tr>
+                <td>forgoten password: email</td>
+            </tr>
+           </tfoot>
             
-            <h4 style={{color : "red",textDecoration:"underline"}}>Login to GAME-TD</h4>
-            <form className="needs-validation">
-                <div>
-                    <label for="username">Username: </label>
-                    <input type="text" class="." id="usernameid" placeholder="@username" required/>
-                </div>
-                <div>
-                    <label for="password">Pass word: </label>
-                    <input type="password" class="." id="passwordid" placeholder="*******" required/>
-                </div>
-                <div className="btn-group"><button type="submit" class="btn" onClick={Checking}>signin</button><button class="btn" onClick={toCreate}>signup</button></div>
-            </form>
-            
-            <p>forgoten password: email</p>
-        </div>
+        </table>
         
     )
 }

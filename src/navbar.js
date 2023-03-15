@@ -1,9 +1,9 @@
 import React from "react";
 
-
+var  bodywidth = document.getElementById("table-resposiveness").offsetWidth
+console.log(bodywidth)
 function Navbar(){
-  var  bodywidth = document.getElementsByClassName("table-responsive")[0].offsetWidth
-  console.log(bodywidth)
+  
   const style = {
     width:bodywidth/10
   }

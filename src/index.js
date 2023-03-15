@@ -22,7 +22,7 @@ export default function Run(){
   
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Logdiv />} />
+        <Route path="/" element={<Dashboard />} />
           <Route path="/SignupDiv" element={< SignupDiv/>} />
           <Route path="/Logdiv" element={< Logdiv />} />
           <Route path="/Table1" element={<Table1 />} />
@@ -37,5 +37,5 @@ export default function Run(){
   
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(< Run />)
+root.render(<Run />)
 reportWebVitals();
