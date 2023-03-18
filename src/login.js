@@ -75,6 +75,7 @@ const Logdiv=()=>{
         </table>
         
     )
+    
 }
 export default Logdiv
 
