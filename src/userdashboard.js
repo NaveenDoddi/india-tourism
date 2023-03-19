@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./navbar";
-import PageNation from "./pagenation";
+// import PageNation from "./pagenation";
 import Table1 from "./empTable1";
 
 function Dashboard(){
@@ -8,7 +8,7 @@ function Dashboard(){
         <>  
             <Navbar />
             <Table1 />
-            <PageNation />
+            {/* <PageNation /> */}
         </>
     )
 }

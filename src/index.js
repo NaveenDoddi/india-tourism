@@ -14,7 +14,7 @@ import Table3 from "./empTable3";
 import Table4 from "./empTable4";
 import Table5 from "./empTable5";
 
-import PageNation from './pagenation';
+// import PageNation from './pagenation';
 
 export default function Run(){
   return(<>

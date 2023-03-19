@@ -64,7 +64,7 @@ function SignupDiv(){
                   password : <input type={"password"} style={{width:"175px"}} required/><br /><br />
                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required/>
                   <label class="form-check-label" for="invalidCheck"><small>Agree tosss terms and conditions</small><p></p></label>
-                  <div style={{textAlign:"right"}}><button type={"submit"} style={{border:"2px solid green",borderRadius:"5px",color:"green"}} onClick={Creating}>Create</button></div>
+                  <div style={{textAlign:"right"}}><button type={"submit"} id={"btn"} onClick={Creating}>Create</button></div>
                   </form>
               </td>
             </tr>
@@ -76,3 +76,4 @@ function SignupDiv(){
 }
 export default SignupDiv
 export {Array1}
+

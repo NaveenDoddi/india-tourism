@@ -48,3 +48,14 @@ div a{
 select,input{
   height: 30px;
 }
+#btn{
+  transition-duration: 0.4s;
+  border:"1px solid red";
+  /* border-radius:"5px"; */
+}
+
+#btn:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  
+}
