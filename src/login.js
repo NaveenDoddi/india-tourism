@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 
 import { Array1 } from "./signupage";
 
-var offwidth = document.getElementById("table-resposiveness").offsetWidth
+var offwidth = document.getElementById("table-responsiveness").offsetWidth
 // console.log(offwidth)
 const Logdiv=()=>{
     const styleLoginDiv ={
@@ -11,7 +11,7 @@ const Logdiv=()=>{
         width : "350px",
         border : "2px solid black",
         position : "relative",
-        top : "300px",
+        // top : "300px",
         left : (offwidth/2)-175,
         textAlign :"center",
         padding : "10px",
@@ -24,7 +24,7 @@ const Logdiv=()=>{
         for(let i=0; i<Array1.length;i++){
             if(usernamedata==Array1[i][0]){
                 if(passworddata==Array1[i][1]){
-                    window.location.pathname = ""
+                    window.location.pathname = "/"
                     // alert("login succes")
                     console.log("F")
                 }else{

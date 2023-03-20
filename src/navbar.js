@@ -1,11 +1,11 @@
 import React from "react";
 
-var  bodywidth = document.getElementById("table-resposiveness").offsetWidth
+var  bodywidth = document.getElementById("table-responsiveness").offsetWidth
 console.log(bodywidth)
 function Navbar(){
   
   const style = {
-    width:bodywidth/10
+    width:bodywidth/8
   }
   const style1 = {
     width:bodywidth/4
@@ -13,7 +13,7 @@ function Navbar(){
  
   return(
     <>
-      <div className="">
+      <div style={{borderBottom:"2px solid ligthgray",height:"50px"}}>
         <div className="col-sm-2" id="nav" style={style}>
             <a href="#">☰</a>
           </div>
