@@ -8,23 +8,16 @@
 
 .pagination a:hover {background-color: #b3dbe7;}
 
-.table th{
-  border: 2px solid black;
-}
 .table td{
-  border: 1px solid black;
+  /* border: 1px solid black; */
  border-collapse: collapse;
   height: 30px;
   width: 0px; 
 
 }
 .table tr{
-  border: 2px solid black;
+  border: none
 }
-/* .table tr:nth-child(even) {
-  background-color: #827e7e;
-} */
-
 
 /* navbar */
 #nav{

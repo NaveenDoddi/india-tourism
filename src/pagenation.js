@@ -13,7 +13,7 @@ function PageNation(){
         <div style={{width:"auto"}}>
             <div className="pagination" style={style}>
                 <a href="">..</a>
-                <a href="./Table1">1</a>
+                <a href="Table1">1</a>
                 <a href="Table2">2</a>
                 <a href="Table3">3</a>
                 <a href="Table4">4</a>

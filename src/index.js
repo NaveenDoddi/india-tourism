@@ -4,7 +4,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Logdiv from './login';
 import SignupDiv from './signupage';
-// import Dashboard from './userdashboard';
+import Dashboard from './userdashboard';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './navbar';
@@ -20,24 +20,29 @@ import PageNation from './pagenation';
 export default function Run(){
   return(<>
   {/* <Yes/> */}
-  <Navbar/>
+  {/* <Navbar/> */}
+  <Dashboard />
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Table1 />} />
+        {/* <Route path="/" element={<Table1 />} /> */}
           <Route path="/SignupDiv" element={< SignupDiv/>} />
           <Route path="/Logdiv" element={< Logdiv />} />
-          <Route path="/Table1" element={<Table1 />} />
+          <Route path="/Dashboard" element={< Dashboard />} />
+          {/* <Route path="/Table1" element={<Table1 />} />
           <Route path="/Table2" element={<Table2 />} />
           <Route path="/Table3" element={<Table3 />} />
           <Route path="/Table4" element={<Table4 />} />
-          <Route path="/Table5" element={<Table5 />} />
+          <Route path="/Table5" element={<Table5 />} /> */}
       </Routes>
     </BrowserRouter>
-    <PageNation />
+    
+    {/* <PageNation /> */}
     
   </>)
   
 }
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Run />)
 reportWebVitals();
