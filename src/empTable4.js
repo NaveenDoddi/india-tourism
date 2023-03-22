@@ -1,8 +1,11 @@
 import React from "react"
 import { empdata60to80 } from "./dataEmployee"
+import Navbar from './navbar';
+import PageNation from './pagenation';
 function Table4(){
     return(
         <>
+        <Navbar />
         <table className="table table-hover">
         <tr><td colSpan={6} style={{textAlign:"center"}}><h3>TABLE 4</h3></td></tr>
         <tbody>
@@ -29,6 +32,7 @@ function Table4(){
             
             
         </table>
+        <PageNation />
             
         </>
     )

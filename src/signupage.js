@@ -1,7 +1,8 @@
 import React from "react";
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 
 var offwidth = document.getElementById("table-responsiveness").offsetWidth
+var offheight = document.getElementById("table-responsiveness").offsetHeight
 
 const Array1 = [['naveen',123,"naveen",12062003,"male",'prasadnaveen847@gmailcom']]
 function SignupDiv(){
@@ -10,37 +11,37 @@ function SignupDiv(){
     width : "350px",
     // border : "2px solid black",
     position : "relative",
-    // top : "200px",
+    top : offheight+50,
     left : (offwidth/2)-175,
     textAlign :"center",
     padding : "10px"
   }
   
-  // function Creating(){
+  function Creating(){
     
-  //   var count= 0
-  //   var arr = []
-  //   for(let i = 0; i<6; i++){  
-  //     var data = document.getElementsByTagName("input")[i].value
-  //     if(data!=""){
-  //       arr.push(data) 
-  //       count++
-  //     }
+    var count= 0
+    var arr = []
+    for(let i = 0; i<6; i++){  
+      var data = document.getElementsByTagName("input")[i].value
+      if(data!=""){
+        arr.push(data) 
+        count++
+      }
       
-  //   }
+    }
   
-  // Array1.push(arr)
-  // console.log(Array1)
-  // var form = document.forms["form"]
-  // if(form.checkValidity(true)){
-  //   window.location.pathname = "/Logdiv";
-  // }
+    Array1.push(arr)
+    console.log(Array1)
+    var form = document.forms["form"]
+    if(form.checkValidity(true)){
+      window.location.pathname = "/Logdiv";
+    }
 
-  // }
-  function Creating() {
-    const history = useHistory();
-    history.push('/next-component');
   }
+  // function Creating() {
+  //   // const history = useHistory();
+  //   // history.push('/next-component');
+  // }
   return (
     <>
       <table className="talbe" style={stylesignupDiv}>

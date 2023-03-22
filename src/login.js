@@ -1,34 +1,28 @@
 import React, { useRef } from "react";
-// import { useHistory } from 'react-router-dom';
-// import signupDiv from "./signupage";
 
 import { Array1 } from "./signupage";
 
 var offwidth = document.getElementById("table-responsiveness").offsetWidth
+var offheight = document.getElementById("table-responsiveness").offsetHeight
 
 const Logdiv=()=>{
     const styleLoginDiv ={
         height : "200px",
         width : "350px",
-        // border :"1px solid",
+        top : offheight+80,
         position : "relative",
         left : (offwidth/2)-175,
         textAlign :"center",
     }
-    
-    // const history = useHistory();
     function Checking(){
        
-    
         var usernamedata = document.getElementById("usernameid").value
         var passworddata = document.getElementById("passwordid").value
         for(let i=0; i<Array1.length;i++){
             if(usernamedata==Array1[i][0]){
                 if(passworddata==Array1[i][1]){
                     // window.location.pathname = "/SignupDiv"
-                    // history.push('/SignupDiv');
-                    // alert("login succes")
-                    console.log("F")
+                    
                 }else{
                     alert("incorrect password")
                 }

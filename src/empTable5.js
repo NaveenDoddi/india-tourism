@@ -1,8 +1,11 @@
-import React from "react"
-import { empdata80to100 } from "./dataEmployee"
+import React from "react";
+import { empdata80to100 } from "./dataEmployee";
+import Navbar from './navbar';
+import PageNation from './pagenation';
 function Table5(){
     return(
         <>
+        <Navbar />
         <table className="table table-hover">
         <tr><td colSpan={6} style={{textAlign:"center"}}><h3>TABLE 5</h3></td></tr>
         <tbody>
@@ -28,6 +31,7 @@ function Table5(){
             
             
         </table>
+        <PageNation />
             
         </>
     )
