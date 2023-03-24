@@ -6,13 +6,15 @@ import Table4 from "./empTable4";
 import Table5 from "./empTable5";
 import Logdiv from "./login";
 import SignupDiv from "./signupage";
-
+import MyForm from "./example";
+import Navbar from "./navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App(){
     return(
-    <> 
-        {/* <Navbar /> */}
+    <>
+        {/* <MyForm /> */}
+        <Navbar /> 
         <BrowserRouter>
           <Routes>
               <Route path="/" element={< Logdiv />} />

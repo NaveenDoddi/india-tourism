@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 
-import { Array1 } from "./signupage";
+// import { person } from "./signupage"
+// import { person } from "./signupage";
+import { formData1 } from "./signupage";
 
 var offwidth = document.getElementById("table-responsiveness").offsetWidth
 var offheight = document.getElementById("table-responsiveness").offsetHeight
@@ -18,17 +20,27 @@ const Logdiv=()=>{
        
         var usernamedata = document.getElementById("usernameid").value
         var passworddata = document.getElementById("passwordid").value
-        for(let i=0; i<Array1.length;i++){
-            if(usernamedata==Array1[i][0]){
-                if(passworddata==Array1[i][1]){
-                    // window.location.pathname = "/SignupDiv"
-                    
-                }else{
-                    alert("incorrect password")
-                }
-                
+        // console.log(formData1)
+        if(usernamedata == formData1.username){
+            if(passworddata == formData1.password){
+                alert("DOB");
+                // window.location.pathname = "/SignupDiv"
             }
+        }else{
+            alert("y god")
         }
+        // for(let i=0; i<Array1.length; i++){
+        //     if(usernamedata==Array1[i][5]){
+        //         if(passworddata==Array1[i][6]){
+        //             window.location.pathname = "/SignupDiv"
+        //             alert(Array1[i])
+                    
+        //         }else{
+        //             alert("incorrect password")
+        //         }
+                
+        //     }
+        // }
 
          
     }
@@ -51,7 +63,7 @@ const Logdiv=()=>{
                         <div>
                             <input type="password" class="." id="passwordid" placeholder="*******" required/>
                         </div>
-                        <div><button style={{width:"189px",border:"1px solid",borderRadius:"0px"}} type="submit" class="btn btn-sm" onClick={Checking}>signin</button></div>
+                        <div><button style={{width:"189px",borderRadius:"0px"}} class="btn btn-sm" onClick={Checking}>signin</button></div>
                     </form>
                     </td>
                 </tr>
