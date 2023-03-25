@@ -1,12 +1,11 @@
 import React from "react";
 // import { useHistory } from 'react-router-dom';
 
-var offwidth = document.getElementById("table-responsiveness").offsetWidth
-var offheight = document.getElementById("table-responsiveness").offsetHeight
-
-var formData1 
-// let Array1 = [["naveen","doddi",12062003,"male",'prasadnaveen847@gmailcom','naveen',123],["naveen","doddi",12062003,"male",'prasadnaveen847@gmailcom','navee',12]]
+var offwidth = document.getElementById("table-responsiveness").offsetWidth;
+var offheight = document.getElementById("table-responsiveness").offsetHeight;
+let form;
 function SignupDiv(){
+
   const stylesignupDiv={
     height : "465px",
     width : "350px",
@@ -17,86 +16,10 @@ function SignupDiv(){
     textAlign :"center",
     padding : "10px"
   }
-  
-  function Creating(){
-    
-    // var count= 0
-    // var arr = []
-    // for(let i = 0; i<6; i++){  
-    //   var data = document.getElementsByTagName("input")[i].value
-    //   if(data!=""){
-    //     arr.push(data) 
-    //     count++
-    //   }
-      
-    // }
-  
-    
-  const form = document.getElementById('form');
 
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
 
-    const firstname = form.elements.firstname.value;
-    const lastname = form.elements.lastname.value;
-    const DOB = form.elements.DOB.value;
-    const gender = form.elements.gender.value;
-    const email = form.elements.email.value;
-    const username = form.elements.username.value;
-    const password = form.elements.password.value;
+  form = document.getElementById('form');
 
-    let formData = {
-      firstname: firstname,
-      lastname: lastname,
-      DOB: DOB,
-      gender:gender,
-      email: email,
-      username: username,
-      password: password,
-    };
-  formData = JSON.stringify(formData)
-  fetch("https://reqres.in/api/users", {
-    method: "POST",
-    body: formData,
-    headers: {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-  })
-  .then((response) => response.json())
-  
-  .then(function go(data){
-    
-    formData1 = data
-  })
-  
-  // const myTimeout = setTimeout(console.log("naveen"), 5000);
-  // console.log(myTimeout)
-
-  
-  
-    // fetch('/submit-form', {
-    //   method: 'POST',
-    //   body: formData
-    // })
-    //   .then(response => response.json())
-    //   .then(data => console.log(data));
-    // window.location.pathname = "/"
-    // console.log(formData);
-  });
-
-  
-    // Array1.push(arr)
-    // console.log(Array1)
-    // var forms = document.forms["form"]
-    // if(form.checkValidity()){
-    //   window.location.pathname = "/Logdiv";
-    // }
-
-  }
-  // function Creating() {
-  //   // const history = useHistory();
-  //   // history.push('/next-component');
-  // }
   return (
     <>
       <table className="talbe" style={stylesignupDiv}>
@@ -121,7 +44,7 @@ function SignupDiv(){
                 password : <input id="password" type={"password"} style={{width:"175px"}} required/><br /><br />
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required/>
                 <label class="form-check-label" for="invalidCheck"><small>Agree terms and conditions </small><p></p></label>
-                <div style={{textAlign:"right"}}><button className="btn btn-success" type={"submit"} id={"btn"} onClick={Creating}>Create</button></div>
+                <div style={{textAlign:"right"}}><button className="btn btn-success" type={"submit"} id={"btn"} onClick={go}>Create</button></div>
                 </form>
             </td>
           </tr>
@@ -131,7 +54,54 @@ function SignupDiv(){
   )
 }
 
-export {formData1 }
+
+let persons = [
+  {
+  firstname: "naveen",
+  lastname: "lastname",
+  DOB: "DOB",
+  gender:"gender",
+  email: "email",
+  username: "naveen",
+  password: "12",
+  },
+  {
+  firstname: "naveen",
+  lastname: "lastname",
+  DOB: "DOB",
+  gender:"gender",
+  email: "email",
+  username: "navya",
+  password: "123",
+  },
+];
+
+function Creating(persons){
+  // const form = document.getElementById('form');
+    persons.firstname = form.elements.firstname.value;
+    persons.lastname = form.elements.lastname.value;
+    persons.DOB = form.elements.DOB.value;
+    persons.gender = form.elements.gender.value;
+    persons.email = form.elements.email.value;
+    persons.username = form.elements.username.value;
+    persons.password = form.elements.password.value;
+    let kothaDhi = {
+    firstname : "naveen",
+    lastname  : "doddi",
+    DOB : 1111111,
+    gender : "M",
+    email : "prasadnaveen@123",
+    username : "n",
+    password : "n"
+  }
+  persons.push(kothaDhi)
+  
+}
+Creating(persons)
+function go(){
+  Creating(persons)
+}
+
+export { persons }
 export default SignupDiv
-// export default {formDa 
 
