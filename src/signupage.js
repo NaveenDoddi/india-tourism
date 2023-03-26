@@ -77,14 +77,9 @@ let persons = [
 ];
 
 function Creating(persons){
-  // const form = document.getElementById('form');
-    persons.firstname = form.elements.firstname.value;
-    persons.lastname = form.elements.lastname.value;
-    persons.DOB = form.elements.DOB.value;
-    persons.gender = form.elements.gender.value;
-    persons.email = form.elements.email.value;
-    persons.username = form.elements.username.value;
-    persons.password = form.elements.password.value;
+
+    // var firstname = document.getElementById("firstname").value
+    // console.log(firstname)
     let kothaDhi = {
     firstname : "naveen",
     lastname  : "doddi",
@@ -97,9 +92,32 @@ function Creating(persons){
   persons.push(kothaDhi)
   
 }
-Creating(persons)
+// Creating(persons)
 function go(){
-  Creating(persons)
+  // Creating(persons)
+  const form = document.getElementById('form');
+    const firstname = form.elements.firstname.value;
+    const lastname = form.elements.lastname.value;
+    const DOB = form.elements.DOB.value;
+    const gender = form.elements.gender.value;
+    const email = form.elements.email.value;
+    const username = form.elements.username.value;
+    const password = form.elements.password.value;
+  let kothaDhi = {
+    firstname : firstname,
+    lastname  : lastname,
+    DOB : DOB,
+    gender : gender,
+    email : email,
+    username : username,
+    password : password
+  }
+  console.log(persons)
+  persons.push(kothaDhi)
+  console.log(persons)
+  window.location.pathname = "/"
+  
+    
 }
 
 export { persons }

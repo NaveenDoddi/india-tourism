@@ -24,7 +24,7 @@ const Logdiv=()=>{
                 if(usernamedata == persons[i].username){
                     if(passworddata == persons[i].password){
                         alert("Succes");
-                        // window.location.pathName = "/Table1";
+                        // window.location.pathname = "/Table1";
                         break;
                         
                     }else{
