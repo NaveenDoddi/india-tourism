@@ -2,15 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import App from './App';
+// import App from './App';
+import Todo from './todo';
+import Run1 from './checking';
 import reportWebVitals from './reportWebVitals';
 
 
 
 export default function Run(){
   return(<>
-    <App />
-    
+    {/* <App /> */}
+    <Todo />
+    {/* <Run1 /> */}
   </>)
   
 }

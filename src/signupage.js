@@ -44,7 +44,7 @@ function SignupDiv(){
                 password : <input id="password" type={"password"} style={{width:"175px"}} required/><br /><br />
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required/>
                 <label class="form-check-label" for="invalidCheck"><small>Agree terms and conditions </small><p></p></label>
-                <div style={{textAlign:"right"}}><button className="btn btn-success" type={"submit"} id={"btn"} onClick={go}>Create</button></div>
+                <div style={{textAlign:"right"}}><button className="btn btn-success" type={"submit"} id={"btn"} onClick={Creating}>Create</button></div>
                 </form>
             </td>
           </tr>
@@ -76,7 +76,7 @@ let persons = [
   },
 ];
 
-function Creating(persons){
+function Creating(){
 
     // var firstname = document.getElementById("firstname").value
     // console.log(firstname)
@@ -89,7 +89,21 @@ function Creating(persons){
     username : "n",
     password : "n"
   }
-  persons.push(kothaDhi)
+
+    kothaDhi = JSON.stringify(kothaDhi)
+    fetch("database.json", {
+      method: "POST",
+      body: kothaDhi,
+      headers: {
+        "Content-type": "application/json; charset=UTF-8"
+      }
+    })
+      .then((response) => response.json())
+
+      // .then(rrr());
+      .then((data)=>console.log(data))
+    
+  // persons.push(kothaDhi)
   
 }
 // Creating(persons)

@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 
-import { persons } from "./signupage";
+// import { persons } from "./signupage";
+import data from './database.json';
+const persons = data
+console.log(persons)
 
 var offwidth = document.getElementById("table-responsiveness").offsetWidth
 var offheight = document.getElementById("table-responsiveness").offsetHeight
@@ -19,21 +22,27 @@ const Logdiv=()=>{
         var usernamedata = document.getElementById("usernameid").value
         var passworddata = document.getElementById("passwordid").value
 
-        for (let i=0; i<persons.length; i++){
-            for(let j in persons[i]){
-                if(usernamedata == persons[i].username){
-                    if(passworddata == persons[i].password){
-                        alert("Succes");
-                        // window.location.pathname = "/Table1";
-                        break;
-                        
-                    }else{
-                        alert("fail")
-                        break;
-                    }
-                }
-            }
+        if(Object.values(persons).map((i)=>i.username == usernamedata) && Object.values(persons).map((i)=>i.password == passworddata)){
+            alert("succes")
         }
+        
+        
+
+        // for (let i=0; i<persons.length; i++){
+        //     for(let j in persons[i]){
+        //         if(usernamedata == persons[i].username){
+        //             if(passworddata == persons[i].password){
+        //                 alert("Succes");
+        //                 // window.location.pathname = "/Table1";
+        //                 break;
+                        
+        //             }else{
+        //                 alert("fail")
+        //                 break;
+        //             }
+        //         }
+        //     }
+        // }
 
     }
 

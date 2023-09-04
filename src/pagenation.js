@@ -1,5 +1,5 @@
 import React from "react";
-
+import Navbar from 'react-bootstrap/Navbar';
 var offwidth = document.getElementById("table-responsiveness").offsetWidth
 
 function PageNation(){
@@ -10,6 +10,17 @@ function PageNation(){
     }
     return(
         <>
+        <Navbar bg="info" fixed='bottom' className='justify-content-center'>
+      
+            <Navbar.Brand href="">..</Navbar.Brand>
+            <Navbar.Brand href="Table1">1</Navbar.Brand>
+            <Navbar.Brand href="Table2">2</Navbar.Brand>
+            <Navbar.Brand href="Table3">3</Navbar.Brand>
+            <Navbar.Brand href="Table4">4</Navbar.Brand>
+            <Navbar.Brand href="Table5">5</Navbar.Brand>
+            <Navbar.Brand href="'">..</Navbar.Brand>
+
+        </Navbar>
         <div style={{width:"auto"}}>
             <div className="pagination" style={style}>
                 <a href="">..</a>

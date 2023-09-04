@@ -9,17 +9,15 @@ import SignupDiv from "./signupage";
 import MyForm from "./example";
 import Navbar from "./navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 function App(){
     return(
     <>
         {/* <MyForm /> */}
-        <Navbar /> 
+        <Navbar />
         <BrowserRouter>
           <Routes>
               <Route path="/" element={< Logdiv />} />
               <Route path="/SignupDiv" element={< SignupDiv />} />
-
               <Route path="/Table1" element={<Table1 />} />
               <Route path="/Table2" element={<Table2 />} />
               <Route path="/Table3" element={<Table3 />} />
