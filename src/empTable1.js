@@ -1,13 +1,13 @@
 import React from "react"
 import { empdata1to20 } from "./dataEmployee"
-import Navbar from './navbar';
+import NavBar from "./navbar";
 import PageNation from './pagenation';
 
 
 function Table1(){
     return(
         <>
-        <Navbar />
+        <NavBar />
         <table className={"table table-hover table-light"}>
         <tr><td colSpan={6} style={{textAlign:"center"}}><h3>TABLE 1</h3></td></tr>
             <tbody>
