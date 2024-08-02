@@ -1,7 +1,9 @@
 import React from "react";
+import { useRef } from "react";
 
 
 function Form(){
+      const inputRef = useRef("")
 
       function validationChecking(){
             var nameBool = false
@@ -35,11 +37,6 @@ function Form(){
             }else{
                   alert("invalid form")
             }
-
-            for (let index = 0; index < list.length; index++) {
-                  
-                  
-            }
       }
 
       return(
@@ -60,11 +57,11 @@ function Form(){
                               <input placeholder="mobile" /><br/>
                               <input placeholder="password" type="password" /><br/>
                               <label>acept terms and conditions <input type="checkbox"/></label>
-                              <button onSubmit={validationChecking}>sign up</button>
                         </form>
                   </div>
                   <div className="footer">
-                        
+                  <button onClick={validationChecking}>sign up</button>
+
                   </div>
             </div>
             </>
