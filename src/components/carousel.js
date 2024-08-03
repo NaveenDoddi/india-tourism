@@ -26,11 +26,11 @@ function Carasoul() {
     setCurrent(index);
   };
 
-  setInterval(() => {
-      index += 1
-      if(index == 3){ index = 0 };
-      setCurrent(index)
-  }, 2000);
+  // setInterval(() => {
+  //     index += 1
+  //     if(index == 3){ index = 0 };
+  //     setCurrent(index)
+  // }, 2000);
  
   return (
     <>

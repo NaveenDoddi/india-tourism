@@ -9,8 +9,19 @@ export default function TODO(){
       const [bool, setBool] = useState(true)
 
       const send=()=>{
-            array.push(inputref.current.value)
-            setItems(array)
+            // array.push(inputref.current.value)
+            // setItems(array)
+
+            setItems(
+                  <div>
+                        <span>{inputref.current.value}</span>
+                        <input style={{display:"none"}}/>
+                        <button onClick={edit}>edit</button>
+                        <button onClick={dele}>delete</button>
+                  </div>
+                  
+            )
+            
 
       }
 
@@ -34,10 +45,6 @@ export default function TODO(){
             
       }
       const dele = (element) =>{
-            var item = element.target.parentNode.childNodes[0].innerText
-             
-            array = items.filter((i) => i != item)
-            setItems(array)
             element.target.parentNode.style.display = "none"
       }
 
@@ -48,19 +55,7 @@ export default function TODO(){
             <button onClick={send}>send</button>
 
             <div>
-            {
-                  
-                  items.map((element)=>{
-                        return(
-                              <div>
-                                    <span>{element}</span>
-                                    <input style={{display:"none"}}/>
-                                    <button onClick={edit}>edit</button>
-                                    <button onClick={dele}>delete</button>
-                              </div>
-                        )
-                  })
-            }
+                  {items}
             </div>
             </>
       )
