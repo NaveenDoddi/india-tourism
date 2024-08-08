@@ -9,7 +9,7 @@ export default function Search(){
       
       const searching = () =>{
             var input = inputRef.current.value
-            setValue(list.filter((city) => city.indexOf(input) >=0))
+            setValue(list.filter((city) => city.indexOf(input) >= 0))
             
       }
       
