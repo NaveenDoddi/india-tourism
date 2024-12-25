@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import { FaSearch } from 'react-icons/fa';
+import { FaSearch, FaAlignRight } from 'react-icons/fa';
 import { TbWorld } from 'react-icons/tb';
 
 
@@ -16,7 +16,7 @@ function OffcanvasExample() {
                 <Container fluid >
                     <Navbar.Brand href="#" className='p-0'>
                         <img
-                            src='bird.jpg'
+                            src='images/bird.jpg'
                             width="70"
                             height="50"
                             className="align-top d-md-none d-lg-none"
@@ -24,7 +24,7 @@ function OffcanvasExample() {
 
                         />
                         <img
-                            src='/logo.jpg'
+                            src='images/logo.jpg'
                             width="70"
                             height="50"
                             className="align-top d-none d-md-block d-lg-block"
@@ -34,7 +34,7 @@ function OffcanvasExample() {
                     </Navbar.Brand>
 
                     <Navbar.Toggle>
-                        ☰
+                        <FaAlignRight/>
                     </Navbar.Toggle>
 
                     <Navbar.Offcanvas

@@ -5,7 +5,7 @@ function Landing() {
             <Carousel className='carousel'>
                   <Carousel.Item>
                         <img 
-                              src='/taj mahal landing.jpg' 
+                              src='/images/taj mahal landing.jpg' 
                               text="First slide" 
                               width='100%'
                         />
@@ -14,9 +14,9 @@ function Landing() {
                               <p>The Taj Mahal in Agra is a UNESCO World Heritage site and a major tourist attraction, known for its stunning architecture and historical significance..</p>
                         </Carousel.Caption>
                   </Carousel.Item>
-                  <Carousel.Item>
+                  {/* <Carousel.Item>
                         <img 
-                              src='/temple landing.jpeg' 
+                              src='/images/temple landing.jpeg' 
                               text="Second slide" 
                               width='100%'
                         />
@@ -24,10 +24,10 @@ function Landing() {
                               <h1>Second slide label</h1>
                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         </Carousel.Caption>
-                  </Carousel.Item>
+                  </Carousel.Item> */}
                   <Carousel.Item>
                         <img 
-                              src='/kasi landing.jpg' 
+                              src='/images/kasi landing.jpg' 
                               text="Third slide"
                               width='100%' 
                         />
@@ -40,7 +40,7 @@ function Landing() {
                   </Carousel.Item>
                   <Carousel.Item>
                         <img 
-                              src='/kerala landing.jpg' 
+                              src='/images/kerala landing.jpg' 
                               text="Third slide"
                               width='100%' 
                         />

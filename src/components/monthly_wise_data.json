@@ -1,0 +1,144 @@
+{
+  "places_to_visit": [
+    {
+      "name": "Jaipur",
+      "state": "Rajasthan",
+      "best_month": "January",
+      "highlights": [
+        "Amber Fort",
+        "Hawa Mahal",
+        "City Palace",
+        "Jantar Mantar",
+        "Jal Mahal"
+      ],
+      "activities": [
+        "Fort exploration",
+        "Shopping at bazaars",
+        "Cultural shows",
+        "Elephant rides",
+        "Street food tasting"
+      ],
+      "temperature": "10-25°C",
+      "description": "The Pink City of India, Jaipur, is known for its magnificent palaces, vibrant culture, and rich history.",
+      "nearest_airport": "Jaipur International Airport",
+      "popular_events": [
+        "Jaipur Literature Festival",
+        "Makar Sankranti Festival"
+      ],
+      "image":"https://assets.cntraveller.in/photos/621489890fb9c3937ea2ebcb/3:2/w_1620,h_1080,c_limit/jaipur%20lead.jpg",
+      "category": [
+        "Culture",
+        "History",
+        "Shopping"
+      ]
+    },
+    {
+      "name": "Auli",
+      "state": "Uttarakhand",
+      "best_month": "January",
+      "highlights": [
+        "Skiing slopes",
+        "Cable car rides",
+        "Snow-covered peaks"
+      ],
+      "activities": [
+        "Skiing",
+        "Trekking",
+        "Photography"
+      ],
+      "temperature": "-4 to 7°C",
+      "description": "Auli is a premier skiing destination offering stunning views of the Himalayas.",
+      "nearest_airport": "Dehradun Airport",
+      "popular_events": [
+        "Auli Skiing Festival"
+      ],
+      "image":"https://trekalone.com/wp-content/uploads/2021/05/auli-skiing.jpg"
+,     "category": [
+        "Adventure",
+        "Trekking",
+        "Snow Sports"
+      ]
+    },
+    {
+      "name": "Rann of Kutch",
+      "state": "Gujarat",
+      "best_month": "January",
+      "highlights": [
+        "White salt desert",
+        "Rann Utsav",
+        "Cultural performances"
+      ],
+      "activities": [
+        "Camel rides",
+        "Photography",
+        "Camping"
+      ],
+      "temperature": "12-25°C",
+      "description": "The Rann of Kutch transforms into a cultural wonderland during the Rann Utsav.",
+      "nearest_airport": "Bhuj Airport",
+      "popular_events": [
+        "Rann Utsav"
+      ],
+      "image":"https://www.gujarattourism.com/content/dam/gujrattourism/images/weekend-get-aways/great-rann-of-kutch/gallery/Great%20Rann%20Of%20Kutch%20(14).jpg",
+      "category": [
+        "Culture",
+        "Camping",
+        "Photography"
+      ]
+    },
+    {
+      "name": "Gulmarg",
+      "state": "Jammu & Kashmir",
+      "best_month": "January",
+      "highlights": [
+        "Skiing destinations",
+        "Snow-covered meadows",
+        "Gondola rides"
+      ],
+      "activities": [
+        "Skiing",
+        "Snowboarding",
+        "Trekking"
+      ],
+      "temperature": "-4 to 10°C",
+      "description": "Gulmarg is a paradise for snow lovers, offering world-class skiing facilities.",
+      "nearest_airport": "Srinagar Airport",
+      "popular_events": [
+        "Winter Sports Festival"
+      ],
+      "image":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/1a/2b/ed/gulmarg.jpg?w=1400&h=1400&s=1",
+      "category": [
+        "Adventure",
+        "Snow Sports",
+        "Trekking"
+      ]
+    },
+    {
+      "name": "Khajuraho",
+      "state": "Madhya Pradesh",
+      "best_month": "January",
+      "highlights": [
+        "Erotic temples",
+        "UNESCO Heritage Site",
+        "Light and sound show"
+      ],
+      "activities": [
+        "Temple tours",
+        "Photography",
+        "Cultural shows"
+      ],
+      "temperature": "9-25°C",
+      "description": "Khajuraho is famous for its exquisite temples adorned with intricate carvings.",
+      "nearest_airport": "Khajuraho Airport",
+      "popular_events": [
+        "Khajuraho Dance Festival"
+      ],
+      "image":"https://www.travelclix.in/wp-content/uploads/2020/04/templae-wall-architecture-1-khajuraho-travelShot-867x650.jpg",
+      "category": [
+        "Culture",
+        "History",
+        "Photography"
+      ]
+    }
+  ]
+}

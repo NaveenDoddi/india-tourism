@@ -1,32 +1,41 @@
 import React, { useState } from "react"
+import data from './monthly_wise_data.json'
+import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa"
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { CiLocationOn } from "react-icons/ci";
+
 function Things() {
 
-      const [data, set_places] = useState("")
-
-      async function run(){
-
-            await fetch("/monthly_wise_data.json")
-            .then((response) => response.json())
-            .then((data) => {
-                  set_places(data)
-            });      
-
-      }
-
-      console.log(data)
+      // function scrolltoLeft(element) {
+      //       var div = element.parentElement.parentElement.parentElement.getElementsByTagName("div")[3]
+      //       div.scrollLeft += 570;            
+      // }
+      // function scrolltoRight(element) {
+      //       element.parentElement.parentElement.parentElement.getElementsByTagName("div")[3].scrollLeft -= 570;
+      // }
 
 
       return (
-            <div>
-                  <h1>Places to Visit</h1>
-                  <div>
+            <div className="thisMonth">
+                  <h1>Places To Visit This Month</h1>
+                  <div className="thisMonthItems">
                         {data.places_to_visit.map((place, index) => (
-                              <div key={index} style={{ border: "1px solid #ccc", margin: "10px", padding: "10px" }}>
-                                    <h2>{place.name}, {place.state}</h2>
-                                    <p><strong>Best Month:</strong> {place.best_month}</p>
-                                    <p><strong>Temperature:</strong> {place.temperature}</p>
-                                    <p><strong>Highlights:</strong> {place.highlights.join(", ")}</p>
-                                    <p><strong>Activities:</strong> {place.activities.join(", ")}</p>
+                              <div key={index} className="card">
+
+                                    <Card>
+                                          <Card.Img variant="top" height='303' src={place.image} />
+                                          <Card.Body>
+                                                
+                                                <Card.Text className="d-flex justify-content-between">
+                                                      <span><CiLocationOn/> {place.name}, {place.state}</span>
+                                                      <span>{place.nearest_airport}</span>
+                                                </Card.Text>
+                                                <Card.Title>{place.activities[0]}</Card.Title>
+                                                <Button variant="primary">Go somewhere</Button>
+                                          </Card.Body>
+                                    </Card>
+
                               </div>
                         ))}
                   </div>

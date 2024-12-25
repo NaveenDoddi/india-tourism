@@ -1,16 +1,54 @@
 .carousel h1 {
     font-family: "myFirstFont";
-    font-size: 6rem;
+    font-size: 4.5vw;
 
 }
 .carousel p {
     font-weight: bold;
-    font-size: 1.5rem;
-
-
+    font-size: 2.5vw;
 }
 
 @font-face {
     font-family: myFirstFont;
     src: url('/public/fonts/TheCircousStriped.ttf') format('truetype');
+}
+
+
+/* things to this month starts here */
+
+.thisMonth{
+    padding: 2%;
+    margin: 2% 0;
+}
+.thisMonth h1{
+    font-weight: bolder;
+    font-size: 5.5vw;
+    margin: 4vh 0;
+
+}
+.thisMonthItems{
+    overflow: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    white-space: nowrap;
+    border-bottom: 2px solid rgb(223, 220, 220);
+    gap: 3;
+}
+.thisMonth .card{
+
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+
+    width: 30rem;
+    
+    border: 2px solid black;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+.thisMonthItems::-webkit-scrollbar {
+    display: none;
 }
