@@ -1,0 +1,84 @@
+{
+  "places_to_visit": [
+    {
+      "name": "Jaipur",
+      "state": "Rajasthan",
+      "best_month": "January",
+      "highlights": ["Amber Fort", "Hawa Mahal", "City Palace"],
+      "activities": ["Fort exploration", "Shopping at bazaars", "Cultural shows"],
+      "temperature": "10-25°C"
+    },
+    {
+      "name": "Auli",
+      "state": "Uttarakhand",
+      "best_month": "January",
+      "highlights": ["Skiing slopes", "Cable car rides", "Snow-covered peaks"],
+      "activities": ["Skiing", "Trekking", "Photography"],
+      "temperature": "-4 to 7°C"
+    },
+    {
+      "name": "Rann of Kutch",
+      "state": "Gujarat",
+      "best_month": "January",
+      "highlights": ["White salt desert", "Rann Utsav", "Cultural performances"],
+      "activities": ["Camel rides", "Photography", "Camping"],
+      "temperature": "12-25°C"
+    },
+    {
+      "name": "Gulmarg",
+      "state": "Jammu & Kashmir",
+      "best_month": "January",
+      "highlights": ["Skiing destinations", "Snow-covered meadows", "Gondola rides"],
+      "activities": ["Skiing", "Snowboarding", "Trekking"],
+      "temperature": "-4 to 10°C"
+    },
+    {
+      "name": "Khajuraho",
+      "state": "Madhya Pradesh",
+      "best_month": "January",
+      "highlights": ["Erotic temples", "UNESCO Heritage Site", "Light and sound show"],
+      "activities": ["Temple tours", "Photography", "Cultural shows"],
+      "temperature": "9-25°C"
+    },
+    {
+      "name": "Goa",
+      "state": "Goa",
+      "best_month": "February",
+      "highlights": ["Carnival celebrations", "Beaches", "Nightlife"],
+      "activities": ["Water sports", "Beach hopping", "Partying"],
+      "temperature": "20-32°C"
+    },
+    {
+      "name": "Jaisalmer",
+      "state": "Rajasthan",
+      "best_month": "February",
+      "highlights": ["Golden Fort", "Sand dunes", "Cultural festivals"],
+      "activities": ["Camel safaris", "Camping", "Desert exploration"],
+      "temperature": "12-28°C"
+    },
+    {
+      "name": "Pondicherry",
+      "state": "Puducherry",
+      "best_month": "February",
+      "highlights": ["French architecture", "Serene beaches", "Auroville"],
+      "activities": ["Beach relaxation", "Cycling tours", "Exploring cafes"],
+      "temperature": "20-30°C"
+    },
+    {
+      "name": "Allepey",
+      "state": "Kerala",
+      "best_month": "February",
+      "highlights": ["Backwaters", "Houseboats", "Traditional Kerala cuisine"],
+      "activities": ["Houseboat stays", "Birdwatching", "Exploring villages"],
+      "temperature": "22-30°C"
+    },
+    {
+      "name": "Sikkim",
+      "state": "Sikkim",
+      "best_month": "February",
+      "highlights": ["Monasteries", "Snow-capped peaks", "Scenic valleys"],
+      "activities": ["Trekking", "Nature walks", "Exploring monasteries"],
+      "temperature": "-5 to 15°C"
+    }
+  ]
+}

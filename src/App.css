@@ -1,5 +1,12 @@
 .carousel h1 {
     font-family: "myFirstFont";
+    font-size: 6rem;
+
+}
+.carousel p {
+    font-weight: bold;
+    font-size: 1.5rem;
+
 
 }
 
