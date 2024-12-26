@@ -1,14 +1,22 @@
-import OffcanvasExample from './components/navbar'
-import Landing from './components/landingPage'
-import Things from './components/thingsToDoSliders'
+
 import './App.css'
-function App(){
-    return(
-    <>
-        <OffcanvasExample />
-        <Landing />
-        <Things />
-    </>
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Home from './components/home';
+import Signup from './components/signup';
+
+function App() {
+    return (
+        <>
+            
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/signup" element={<Signup />} />
+                    {/* <Route path="/contact" element={< />} /> */}
+                </Routes>
+            </Router>
+        </>
     )
 }
 export default App

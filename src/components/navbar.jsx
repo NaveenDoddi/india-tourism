@@ -12,7 +12,7 @@ function OffcanvasExample() {
     
     return (
         <>
-            <Navbar expand='lg' style={{backgroundColor:"black"}} data-bs-theme='dark' fixed="top">
+            <Navbar expand='lg' style={{backgroundColor:'rgba(0, 0, 0, 0.9)'}} data-bs-theme='dark' fixed="top">
                 <Container fluid >
                     <Navbar.Brand href="#" className='p-0'>
                         <img
@@ -70,7 +70,7 @@ function OffcanvasExample() {
                                 
                                 <Nav.Link><div className="border border-1 border-dark d-lg-none"></div></Nav.Link>
 
-                                <Nav.Link style={{color:'#AA98A9'}}> LOG IN / SIGN UP </Nav.Link>
+                                <Nav.Link href='Signup' style={{color:'#AA98A9'}}> LOG IN / SIGN UP </Nav.Link>
                                 
 
                             </Nav>

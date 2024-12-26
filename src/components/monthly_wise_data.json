@@ -81,9 +81,9 @@
       ],
       "image":"https://www.gujarattourism.com/content/dam/gujrattourism/images/weekend-get-aways/great-rann-of-kutch/gallery/Great%20Rann%20Of%20Kutch%20(14).jpg",
       "category": [
+        "Photography",
         "Culture",
-        "Camping",
-        "Photography"
+        "Camping"
       ]
     },
     {
@@ -108,8 +108,9 @@
       ],
       "image":"https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/1a/2b/ed/gulmarg.jpg?w=1400&h=1400&s=1",
       "category": [
-        "Adventure",
         "Snow Sports",
+        "Adventure",
+        
         "Trekking"
       ]
     },
@@ -135,8 +136,8 @@
       ],
       "image":"https://www.travelclix.in/wp-content/uploads/2020/04/templae-wall-architecture-1-khajuraho-travelShot-867x650.jpg",
       "category": [
-        "Culture",
         "History",
+        "Culture",
         "Photography"
       ]
     }

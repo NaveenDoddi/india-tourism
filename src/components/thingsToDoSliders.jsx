@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import data from './monthly_wise_data.json'
 import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
 import { MdFlightTakeoff } from "react-icons/md";
@@ -6,21 +6,37 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { CiLocationOn } from "react-icons/ci";
 
+import { IoSunnyOutline, IoPartlySunnyOutline } from "react-icons/io5";
+import { MdOutlineSevereCold } from "react-icons/md";
+import { TiWeatherWindyCloudy } from "react-icons/ti";
+
 function Things() {
 
-      // function scrolltoLeft(element) {
-      //       var div = element.parentElement.parentElement.parentElement.getElementsByTagName("div")[3]
-      //       div.scrollLeft += 570;            
-      // }
-      // function scrolltoRight(element) {
-      //       element.parentElement.parentElement.parentElement.getElementsByTagName("div")[3].scrollLeft -= 570;
-      // }
+      const scroll = useRef();      
+
+      function scrolltoLeft() {
+            scroll.current.scrollLeft -= 570;            
+      }
+      function scrolltoRight() {
+            scroll.current.scrollLeft += 570;
+      }
+
 
 
       return (
             <div className="thisMonth">
-                  <h1>Places To Visit This Month</h1>
-                  <div className="thisMonthItems">
+                  <div className="d-flex justify-content-between">
+                        <div><h1>Places To Visit This <span>Month</span></h1></div>
+                        <div className="d-flex align-items-center">
+                              <div>
+                                    <Button style={{backgroundColor:'#8B008B'}} onClick={scrolltoLeft}> <FaArrowCircleLeft /> </Button>
+                                    <Button style={{backgroundColor:'#8B008B'}} onClick={scrolltoRight}> <FaArrowCircleRight /> </Button>
+                              </div>
+                              
+                        </div>
+                  </div>
+                  
+                  <div className="thisMonthItems" ref={scroll}>
                         {data.places_to_visit.map((place, index) => (
                               <Card>
                                     <Card.Img variant="top" height='300' src={place.image} />
@@ -37,17 +53,19 @@ function Things() {
 
                                     <Card.Body>
                                           <Card.Text className="row">
-                                                <div className="col-sm-12 col-lg-6 text-sm-start fw-bold"><CiLocationOn /> {place.name}, {place.state}</div>
+                                                <div style={{color:'#8B008B'}} className="col-sm-12 col-lg-6 text-sm-start fw-bold"><CiLocationOn /> {place.name}, {place.state}</div>
                                                 <div className="col-sm-12 col-lg-6 text-sm-start text-lg-end"> <MdFlightTakeoff /> {place.nearest_airport}</div>
                                           </Card.Text>
-                                          <Card.Text>
+                                          <Card.Text className="text-wrap text-break">
                                                 {place.description}
                                           </Card.Text>
-                                          <Card.Text>
-                                                {place.temperature}
+                                          <Card.Text className="row">
+
+                                                <div className="col-6 text-start fw-bold"> {place.category[0]} </div>
+                                                <div className="col-6 text-end"> {place.temperature} </div>
+                                    
                                           </Card.Text>
-                                          {/* <Card.Title>{place.activities[0]}</Card.Title> */}
-                                          <Button variant="primary">explore more</Button>
+                                          <Button size="sm" style={{backgroundColor:'#8B008B'}}>explore more</Button>
                                     </Card.Body>
                               </Card>
 
