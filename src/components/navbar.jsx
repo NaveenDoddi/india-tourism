@@ -12,7 +12,7 @@ function OffcanvasExample() {
     
     return (
         <>
-            <Navbar expand='lg' style={{backgroundColor:"black"}} data-bs-theme='dark' className="">
+            <Navbar expand='lg' style={{backgroundColor:"black"}} data-bs-theme='dark' fixed="top">
                 <Container fluid >
                     <Navbar.Brand href="#" className='p-0'>
                         <img
