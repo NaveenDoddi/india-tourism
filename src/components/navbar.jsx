@@ -8,7 +8,7 @@ import { FaSearch, FaAlignRight } from 'react-icons/fa';
 import { TbWorld } from 'react-icons/tb';
 
 
-function OffcanvasExample() {
+function Header() {
     
     return (
         <>
@@ -83,4 +83,4 @@ function OffcanvasExample() {
     );
 }
 
-export default OffcanvasExample;
+export default Header;

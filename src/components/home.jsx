@@ -1,14 +1,16 @@
 
 import React from "react"
-import OffcanvasExample from './navbar'
+import Header from './navbar'
 import Landing from './landingPage'
 import Things from './thingsToDoSliders'
+import Filter from "./filter"
 function Home() {
       return (
             <>
-                  <OffcanvasExample />
+                  <Header />
                   <Landing />
                   <Things />
+                  <Filter />
             </>
       )
 }

@@ -130,3 +130,26 @@
     text-align: center;
     padding: 20px;
   }
+
+/* filter starts here */
+
+.filterDropdown{
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    gap: 3px;;
+}
+.filterDropdown select{
+    width: auto;
+    min-width: 300px;
+    height: auto;
+    padding: 2vh;
+    font-weight: 600;
+
+}
+.filterDropdown input{
+    width: auto;
+    min-width: 300px;
+    min-height: 40px;
+}
+/* filter ends here */

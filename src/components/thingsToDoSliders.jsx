@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react"
+import React, { useRef } from "react"
 import data from './monthly_wise_data.json'
 import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
 import { MdFlightTakeoff } from "react-icons/md";
@@ -6,10 +6,13 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { CiLocationOn } from "react-icons/ci";
 
-import { IoSunnyOutline, IoPartlySunnyOutline } from "react-icons/io5";
-import { MdOutlineSevereCold } from "react-icons/md";
-import { TiWeatherWindyCloudy } from "react-icons/ti";
+// import { IoSunnyOutline, IoPartlySunnyOutline } from "react-icons/io5";
+// import { MdOutlineSevereCold } from "react-icons/md";
+// import { TiWeatherWindyCloudy } from "react-icons/ti";
 
+
+import PlaceContext from './contextApi'
+      
 function Things() {
 
       const scroll = useRef();      
@@ -21,10 +24,8 @@ function Things() {
             scroll.current.scrollLeft += 570;
       }
 
-
-
       return (
-            <div className="thisMonth">
+            <div className="thisMonth">                  
                   <div className="d-flex justify-content-between">
                         <div><h1>Places To Visit This <span>Month</span></h1></div>
                         <div className="d-flex align-items-center">
