@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 
 // marker icons
 import markerIcon from "leaflet/dist/images/marker-icon.png";
-function LeafletMap(lat, long, description) {
+function LeafletMap(props) {
       useEffect(() => {
             const map = L.map("map").setView([20.5937, 78.9629], 5); // Coordinates of India
 
@@ -21,9 +21,9 @@ function LeafletMap(lat, long, description) {
             L.Marker.prototype.options.icon = defaultIcon;
 
             // Add a marker for place with a popup
-            L.marker([lat, long])
+            L.marker([props.lat, props.long])
                   .addTo(map)
-                  .bindPopup(`<b>Mumbai</b>${description}<br/>.`);
+                  .bindPopup(`<b>Mumbai</b>${props.description}<br/>.`);
 
                   
             return () => {
