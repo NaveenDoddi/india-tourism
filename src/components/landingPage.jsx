@@ -2,7 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Landing() {
       return (
-            <Carousel className='carousel'>
+            <Carousel className='carousel mt-5'>
                   <Carousel.Item>
                         <img 
                               src='/images/taj mahal landing2.jpg' 

@@ -12,20 +12,20 @@ function Header() {
     
     return (
         <>
-            <Navbar expand='lg' style={{backgroundColor:'rgba(0, 0, 0, 0.9)'}} data-bs-theme='dark' fixed="top">
+            <Navbar expand='lg' style={{backgroundColor:'rgba(255, 255, 255, 0.9)'}} data-bs-theme='light' fixed="top">
                 <Container fluid >
                     <Navbar.Brand href="#" className='p-0'>
                         <img
-                            src='images/bird.jpg'
-                            width="70"
-                            height="50"
+                            src='images/brand.jpg'
+                            width="80"
+                            height="40"
                             className="align-top d-md-none d-lg-none"
                             alt="React Bootstrap logo"
 
                         />
                         <img
-                            src='images/logo.jpg'
-                            width="70"
+                            src='images/brand.jpg'
+                            width="100"
                             height="50"
                             className="align-top d-none d-md-block d-lg-block"
                             alt="React Bootstrap logo"
