@@ -6,7 +6,7 @@ import "leaflet/dist/leaflet.css";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 function LeafletMap(props) {
       useEffect(() => {
-            const map = L.map("map").setView([20.5937, 78.9629], 5); // Coordinates of India
+            const map = L.map("map").setView([props.latitude, props.longitute], 5);
 
             L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
                   attribution: '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -14,22 +14,28 @@ function LeafletMap(props) {
 
             const defaultIcon = L.icon({
                   iconUrl: markerIcon,
-                  iconSize: [25, 41], // Default size of the icon
-                  iconAnchor: [12, 41], // Anchor of the icon (base point)
-                  popupAnchor: [1, -34], // Point where the popup opens relative to the icon
+                  iconSize: [25, 41],
+                  iconAnchor: [12, 41],
+                  popupAnchor: [1, -34],
             });
             L.Marker.prototype.options.icon = defaultIcon;
 
-            // Add a marker for place with a popup
-            L.marker([props.lat, props.long])
-                  .addTo(map)
-                  .bindPopup(`<b>Mumbai</b>${props.description}<br/>.`);
+            const marker = L.marker([props.latitude, props.longitute]).addTo(map);
+            marker.bindPopup(`
+                  <div style="display: flex;">
+                    <div style="flex: 1;">
+                      <img src=${props.imageUrl} alt="Image" style="width: 100%; height: auto;">
+                    </div>
 
-                  
-            return () => {
-                  map.remove(); // Cleanup map on component unmount
-            };
-      }, []);
+                    <div style="flex: 1; padding-left: 10px;">
+                      <h6>Your Heading</h6>
+                      <p>${props.description}</p>
+                    </div>
+                  </div>
+                  `);
+
+            return () => map.remove();
+      }, [props.latitude, props.longitute, props.description]); // Dependencies for re-rendering
 
       return (
             <div
@@ -41,6 +47,8 @@ function LeafletMap(props) {
                   }}
             ></div>
       );
-};
+}
+
+
 
 export default LeafletMap;

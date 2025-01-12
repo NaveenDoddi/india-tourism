@@ -1,0 +1,58 @@
+{
+      "mapdata": [
+            {
+                  "name": "Varanasi Ghats",
+                  "coordinates": {
+                        "latitude": 25.3176,
+                        "longitude": 82.9739
+                  },
+                  "description": "The sacred ghats of Varanasi are renowned for spiritual rituals, offering visitors a glimpse of India's cultural heritage.",
+                  "imageUrl": "https://example.com/images/varanasi-ghats.jpg"
+            },
+            {
+                  "name": "Meenakshi Temple",
+                  "coordinates": {
+                        "latitude": 9.9195,
+                        "longitude": 78.1195
+                  },
+                  "description": "A historic temple in Madurai, known for its intricate architecture, vibrant sculptures, and spiritual significance.",
+                  "imageUrl": "https://i.ytimg.com/vi/7N3tpXssXXg/sddefault.jpg?v=65819109"
+            },
+            {
+                  "name": "Konark Sun Temple",
+                  "coordinates": {
+                        "latitude": 19.8876,
+                        "longitude": 86.0945
+                  },
+                  "description": "A UNESCO World Heritage Site, this 13th-century temple in Odisha is an architectural masterpiece dedicated to the Sun God.",
+                  "imageUrl": "https://example.com/images/konark-sun-temple.jpg"
+            },
+            {
+                  "name": "Hampi",
+                  "coordinates": {
+                        "latitude": 15.3350,
+                        "longitude": 76.4600
+                  },
+                  "description": "A UNESCO World Heritage Site in Karnataka, known for its ruins of the Vijayanagara Empire and stunning temples.",
+                  "imageUrl": "https://example.com/images/hampi.jpg"
+            },
+            {
+                  "name": "Rameswaram",
+                  "coordinates": {
+                        "latitude": 9.2880,
+                        "longitude": 79.3129
+                  },
+                  "description": "A sacred town in Tamil Nadu, famous for the Ramanathaswamy Temple and its connection to the Ramayana.",
+                  "imageUrl": "https://example.com/images/rameswaram.jpg"
+            },
+            {
+                  "name": "Valley of Flowers",
+                  "coordinates": {
+                        "latitude": 30.7280,
+                        "longitude": 79.6056
+                  },
+                  "description": "A UNESCO World Heritage Site in Uttarakhand, this picturesque valley is known for its vibrant alpine flowers and stunning landscapes.",
+                  "imageUrl": "https://example.com/images/valley-of-flowers.jpg"
+            }
+      ]
+}
