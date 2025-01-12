@@ -19,7 +19,7 @@ function MapSection() {
                         <h6 className="mb-4">Explore the Rich Heritage of India's Shrines</h6>
                   </div>
                   <div className="row">
-                        <div className="col-12 col-md-8">
+                        <div className="col-12 col-sm-8">
                               <LeafletMap
                                     latitude={place.coordinates.latitude}
                                     longitute={place.coordinates.longitude}
@@ -29,7 +29,7 @@ function MapSection() {
                               />
                         </div>
 
-                        <div className="col-12 col-md-4 placeCardContainer">
+                        <div className="col-12 col-sm-4 placeCardContainer">
                               {data.mapdata.map((place, index) => {
                                     return (
                                           <div className="placeCard" key={index} onClick={() => locateOnMap(place)}>

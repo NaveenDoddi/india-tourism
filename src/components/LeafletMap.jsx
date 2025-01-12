@@ -14,8 +14,8 @@ function LeafletMap(props) {
             }).addTo(map);
 
             const defaultIcon = L.icon({
-                  iconUrl: markerIcon,
-                  iconSize: [25, 41],
+                  iconUrl: props.imageUrl,
+                  iconSize: [41, 41, 50],
                   iconAnchor: [12, 41],
                   popupAnchor: [1, -34],
             });
@@ -23,33 +23,15 @@ function LeafletMap(props) {
 
             const marker = L.marker([props.latitude, props.longitute]).addTo(map);
             marker.bindPopup(`
-                  <div style="display: flex;">
-                    <div style="flex: 1;">
-                      <img src=${props.imageUrl} alt="Image" style="width: 100%; height: 100%;">
-                    </div>
-
-                    <div style="flex: 1; padding-left: 10px;">
-                      <h6>${props.name}</h6>
-                      <p>${props.description}</p>
-                    </div>
-                  </div>
+                  <h6>${props.name}</h6>
                   `);
 
             return () => map.remove();
       }, [props.latitude, props.longitute, props.description]); // Dependencies for re-rendering
 
       return (
-            <div
-                  id="map"
-                  style={{
-                        height: "80vh",
-                        width: "100%",
-                        border: "1px solid gray",
-                  }}
-            ></div>
+            <div id="map"></div>
       );
 }
-
-
 
 export default LeafletMap;

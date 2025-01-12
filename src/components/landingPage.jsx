@@ -2,7 +2,8 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Landing() {
       return (
-            <Carousel className='carousel mt-5'>
+            <Carousel className='carousel'>
+                  
                   <Carousel.Item>
                         <img 
                               src='/images/taj mahal landing2.jpg' 
@@ -14,6 +15,7 @@ function Landing() {
                               <p>The Taj Mahal in Agra is a UNESCO World Heritage site and a major tourist attraction, known for its stunning architecture and historical significance..</p>
                         </Carousel.Caption>
                   </Carousel.Item>
+
                   {/* <Carousel.Item>
                         <img 
                               src='/images/temple landing.jpeg' 
@@ -38,6 +40,7 @@ function Landing() {
                               </p>
                         </Carousel.Caption>
                   </Carousel.Item>
+
                   <Carousel.Item>
                         <img 
                               src='/images/kerala landing.jpg' 
