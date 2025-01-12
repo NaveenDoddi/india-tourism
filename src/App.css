@@ -22,7 +22,7 @@
     margin: 2% 0;
 }
 
-.thisMonth h1 {
+.thisMonth h1{
     font-weight: bolder;
     font-size: 5vw;
     margin: 4vh 0;
@@ -62,6 +62,25 @@
         width: 75vw;
         font-size: small;
     }
+
+    .placeCardContainer {
+
+        display: flex;
+        height: auto;
+        width: 100%;
+        overflow: auto;
+        scroll-behavior: smooth
+    }
+
+    .mapSection .placeCard{
+
+        width: 300px;
+        padding: 5px;
+
+        margin-right: 10px;
+        border-right: 2px solid gray;
+        cursor: pointer;
+    }
 }
 
 /* For medium screens (md) and large screen (lg) */
@@ -69,9 +88,22 @@
     .thisMonth .card {
         width: 40vw;
     }
+
+    .placeCardContainer {
+        height: 80vh;
+        overflow: auto;
+        scroll-behavior: smooth
+    }
+
+    .mapSection .placeCard{
+        padding: 5px;
+        margin-top: 10px;
+        border-bottom: 2px solid gray;
+        cursor: pointer;
+    }
 }
 
-.thisMonthItems::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -106,6 +138,24 @@
 }
 
 /* things to this month ends here */
+
+
+/* mapSection css starts here */
+.mapSection h1{
+    font-weight: bolder;
+    font-size: 4vw;
+    margin:0;
+
+}
+.mapSection h6{
+    font-weight: bolder;
+}
+.mapSection .placeCard img{
+    height: 50%;
+    width: 100%;
+
+}
+/* mapSection css ends here */
 
 
 /* second landing vedio css starts here*/
@@ -165,6 +215,7 @@
     width: auto;
     min-width: 300px;
     min-height: 40px;
+
 }
 
 /* filter ends here */

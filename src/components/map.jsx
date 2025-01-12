@@ -10,35 +10,42 @@ function MapSection() {
 
             setPlace(item)
       }
-      console.log(place.coordinates.latitude)
-      console.log(place.coordinates.longitude)
       return (
 
-            <div className="row">
-                  <div className="col-12 col-md-8">
-                        <LeafletMap
-                              latitude = {place.coordinates.latitude}
-                              longitute = {place.coordinates.longitude}
-                              description = {place.description}
-                              imageUrl = {place.imageUrl}
-                        />
+
+            <div className="mapSection">
+                  <div className="ms-4">
+                        <h1>Temple Tales</h1>
+                        <h6 className="mb-4">Explore the Rich Heritage of India's Shrines</h6>
                   </div>
+                  <div className="row">
+                        <div className="col-12 col-md-8">
+                              <LeafletMap
+                                    latitude={place.coordinates.latitude}
+                                    longitute={place.coordinates.longitude}
+                                    description={place.description}
+                                    imageUrl={place.imageUrl}
+                                    name = {place.name}
+                              />
+                        </div>
 
-                  <div className="col-12 col-md-4">
-                        {data.mapdata.map((place, index) => {
-                              return (
-                                    <div key={index}>
-                                          <p>{place.name}</p>
-                                          <p>{place.description}</p>
-                                          <button onClick={() => locateOnMap(place)}>get</button>
-                                    </div>
-                              )
+                        <div className="col-12 col-md-4 placeCardContainer">
+                              {data.mapdata.map((place, index) => {
+                                    return (
+                                          <div className="placeCard" key={index} onClick={() => locateOnMap(place)}>
+                                                <img src={place.imageUrl} alt="" />
+                                                <h6>{place.name}</h6>
+                                                <p>{place.description}</p>
+                                          </div>
+                                    )
 
-                        })}
+                              })}
+
+                        </div>
 
                   </div>
-
             </div>
+
       )
 }
 

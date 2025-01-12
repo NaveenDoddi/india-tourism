@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-// marker icons
-import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerIcon from "leaflet/dist/images/marker-icon.png"; // marker icons
+
+
 function LeafletMap(props) {
       useEffect(() => {
             const map = L.map("map").setView([props.latitude, props.longitute], 5);
@@ -24,11 +25,11 @@ function LeafletMap(props) {
             marker.bindPopup(`
                   <div style="display: flex;">
                     <div style="flex: 1;">
-                      <img src=${props.imageUrl} alt="Image" style="width: 100%; height: auto;">
+                      <img src=${props.imageUrl} alt="Image" style="width: 100%; height: 100%;">
                     </div>
 
                     <div style="flex: 1; padding-left: 10px;">
-                      <h6>Your Heading</h6>
+                      <h6>${props.name}</h6>
                       <p>${props.description}</p>
                     </div>
                   </div>

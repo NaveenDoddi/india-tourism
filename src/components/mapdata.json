@@ -1,13 +1,14 @@
 {
       "mapdata": [
+            
             {
-                  "name": "Varanasi Ghats",
+                  "name": "Murudeshwar",
                   "coordinates": {
-                        "latitude": 25.3176,
-                        "longitude": 82.9739
+                        "latitude": 14.0940,
+                        "longitude": 74.4899
                   },
-                  "description": "The sacred ghats of Varanasi are renowned for spiritual rituals, offering visitors a glimpse of India's cultural heritage.",
-                  "imageUrl": "https://example.com/images/varanasi-ghats.jpg"
+                  "description": "Famous for the world's second-tallest Shiva statue, the town lies on the coast of the Arabian Sea and is also famous for the Murdeshwar Temple.",
+                  "imageUrl": "https://pravase.co.in/admin_pravase/uploads/yatradham/Murudeshwar-Pilgrimage-Tourism-Karnataka_1642918472.JPG"
             },
             {
                   "name": "Meenakshi Temple",
@@ -25,7 +26,7 @@
                         "longitude": 86.0945
                   },
                   "description": "A UNESCO World Heritage Site, this 13th-century temple in Odisha is an architectural masterpiece dedicated to the Sun God.",
-                  "imageUrl": "https://example.com/images/konark-sun-temple.jpg"
+                  "imageUrl": "https://static.toiimg.com/thumb/width-600,height-400,msid-102580287.cms"
             },
             {
                   "name": "Hampi",
@@ -34,7 +35,7 @@
                         "longitude": 76.4600
                   },
                   "description": "A UNESCO World Heritage Site in Karnataka, known for its ruins of the Vijayanagara Empire and stunning temples.",
-                  "imageUrl": "https://example.com/images/hampi.jpg"
+                  "imageUrl": "https://www.stayvista.com/blog/wp-content/uploads/2024/09/Hampi_karnataka.jpg"
             },
             {
                   "name": "Rameswaram",
@@ -43,16 +44,16 @@
                         "longitude": 79.3129
                   },
                   "description": "A sacred town in Tamil Nadu, famous for the Ramanathaswamy Temple and its connection to the Ramayana.",
-                  "imageUrl": "https://example.com/images/rameswaram.jpg"
+                  "imageUrl": "https://apnayatra.com/wp-content/uploads/2023/07/Rameshwaram-Jyotirlinga-Shivam-Temple0.jpg"
             },
             {
-                  "name": "Valley of Flowers",
+                  "name": "Kedarnath",
                   "coordinates": {
-                        "latitude": 30.7280,
-                        "longitude": 79.6056
+                        "latitude": 30.7351, 
+                        "longitude": 79.0669
                   },
-                  "description": "A UNESCO World Heritage Site in Uttarakhand, this picturesque valley is known for its vibrant alpine flowers and stunning landscapes.",
-                  "imageUrl": "https://example.com/images/valley-of-flowers.jpg"
+                  "description": "It is the most remote of the four Chota Char Dham pilgrimage sites. It is located in the Himalayas, about 3,583 m (11,755 ft) above sea level",
+                  "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJbH-AlG-vOK_9EztcM3sSQ_ikj3816FoOjw&s"
             }
       ]
 }
