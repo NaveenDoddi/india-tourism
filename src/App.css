@@ -2,7 +2,7 @@
     font-family: "myFirstFont";
 }
 .carousel img{
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
 }
 
@@ -133,7 +133,9 @@
 
 .mapSection h6 {
     font-weight: bolder;
+    color: #8B008B;
 }
+
 
 /* For small screens (sm) */
 @media (max-width: 576px) {
