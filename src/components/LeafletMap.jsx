@@ -2,10 +2,8 @@ import React, { useEffect } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-import markerIcon from "leaflet/dist/images/marker-icon.png"; // marker icons
-
-
 function LeafletMap(props) {
+
       useEffect(() => {
             const map = L.map("map").setView([props.latitude, props.longitute], 5);
 
