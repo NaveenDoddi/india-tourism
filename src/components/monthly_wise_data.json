@@ -1,5 +1,5 @@
 {
-  "places_to_visit": [
+  "January": [
     {
       "name": "Jaipur",
       "state": "Rajasthan",
@@ -159,43 +159,9 @@
         "Culture",
         "Photography"
       ]
-    },
-    {
-      "name": "Jaipur",
-      "state": "Rajasthan",
-      "best_month": "January",
-      "coordinates": {
-        "latitude": 26.9124,
-        "longitude": 75.7873
-      },
-      "highlights": [
-        "Amber Fort",
-        "Hawa Mahal",
-        "City Palace",
-        "Jantar Mantar",
-        "Jal Mahal"
-      ],
-      "activities": [
-        "Fort exploration",
-        "Shopping at bazaars",
-        "Cultural shows",
-        "Elephant rides",
-        "Street food tasting"
-      ],
-      "temperature": "10-25°C",
-      "description": "The Pink City of India, Jaipur, is known for its magnificent palaces, vibrant culture, history.",
-      "nearest_airport": "Jaipur International Airport",
-      "popular_events": [
-        "Jaipur Literature Festival",
-        "Makar Sankranti Festival"
-      ],
-      "image": "https://assets.cntraveller.in/photos/621489890fb9c3937ea2ebcb/3:2/w_1620,h_1080,c_limit/jaipur%20lead.jpg",
-      "category": [
-        "Culture",
-        "History",
-        "Shopping"
-      ]
-    },
+    }
+  ],
+  "February": [
     {
       "name": "Munnar",
       "state": "Kerala",
@@ -320,7 +286,9 @@
         "History",
         "Relaxation"
       ]
-    },
+    }
+  ],
+  "March": [
     {
       "name": "Darjeeling",
       "state": "West Bengal",
@@ -444,7 +412,9 @@
         "History",
         "Photography"
       ]
-    },
+    }
+  ],
+  "April": [
     {
       "name": "Taj Mahal",
       "state": "Uttar Pradesh",
@@ -599,7 +569,9 @@
         "Adventure",
         "Beach"
       ]
-    },
+    }
+  ],
+  "May": [
     {
       "name": "Manali",
       "state": "Himachal Pradesh",
@@ -754,7 +726,9 @@
         "Nature",
         "Culture"
       ]
-    },
+    }
+  ],
+  "June": [
     {
       "name": "Kumarakom",
       "state": "Kerala",
@@ -909,7 +883,9 @@
         "Culture",
         "Photography"
       ]
-    },
+    }
+  ],
+  "July": [
     {
       "name": "Kedarnath",
       "state": "Uttarakhand",
@@ -1064,7 +1040,9 @@
         "Nature",
         "Culture"
       ]
-    },
+    }
+  ],
+  "August": [
     {
       "name": "Leh",
       "state": "Ladakh",
@@ -1219,7 +1197,9 @@
         "History",
         "Photography"
       ]
-    },
+    }
+  ],
+  "September": [
     {
       "name": "Coorg",
       "state": "Karnataka",
@@ -1374,7 +1354,9 @@
         "History",
         "Photography"
       ]
-    },
+    }
+  ],
+  "October": [
     {
       "name": "Mysore",
       "state": "Karnataka",
@@ -1529,7 +1511,9 @@
         "Culture",
         "Photography"
       ]
-    },
+    }
+  ],
+  "November": [
     {
       "name": "Nagaland",
       "state": "Nagaland",
@@ -1684,7 +1668,9 @@
         "Culture",
         "Pilgrimage"
       ]
-    },
+    }
+  ],
+  "December": [
     {
       "name": "Kashmir",
       "state": "Jammu & Kashmir",
@@ -1838,6 +1824,224 @@
         "Beach",
         "Culture",
         "Festivals"
+      ]
+    }
+  ],
+  "mapdata": [
+    {
+      "name": "Murudeshwar",
+      "state": "Karnataka",
+      "best_month": "October to February",
+      "coordinates": {
+        "latitude": 14.0940,
+        "longitude": 74.4899
+      },
+      "highlights": [
+        "Murdeshwar Temple",
+        "World's Second-Tallest Shiva Statue",
+        "Arabian Sea View"
+      ],
+      "activities": [
+        "Pilgrimage",
+        "Beach Walks",
+        "Snorkeling"
+      ],
+      "temperature": "22-34°C",
+      "description": "Famous for the world's second-tallest Shiva statue, the town lies on the coast of the Arabian Sea and is also famous for the Murdeshwar Temple.",
+      "nearest_airport": "Mangalore Airport",
+      "popular_events": [
+        "Mahashivaratri Celebrations"
+      ],
+      "image": "https://pravase.co.in/admin_pravase/uploads/yatradham/Murudeshwar-Pilgrimage-Tourism-Karnataka_1642918472.JPG",
+      "category": [
+        "Spirituality",
+        "Pilgrimage",
+        "Coastal"
+      ]
+    },
+    {
+      "name": "Tirupati",
+      "state": "Andhra Pradesh",
+      "best_month": "September to March",
+      "coordinates": {
+        "latitude": 13.6288,
+        "longitude": 79.4192
+      },
+      "highlights": [
+        "Tirumala Venkateswara Temple",
+        "Silathoranam",
+        "Sri Venkateswara National Park"
+      ],
+      "activities": [
+        "Pilgrimage",
+        "Nature walks",
+        "Photography"
+      ],
+      "temperature": "15-35°C",
+      "description": "Tirupati is a spiritual hub, famous for its iconic Tirumala Venkateswara Temple and scenic surroundings.",
+      "nearest_airport": "Tirupati Airport",
+      "popular_events": [
+        "Brahmotsavam Festival"
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Tirupati_Temple.jpg",
+      "category": [
+        "Spirituality",
+        "Pilgrimage"
+      ]
+    },   
+    {
+      "name": "Meenakshi Temple",
+      "state": "Tamil Nadu",
+      "best_month": "October to March",
+      "coordinates": {
+        "latitude": 9.9195,
+        "longitude": 78.1195
+      },
+      "highlights": [
+        "Gopurams (Gateway Towers)",
+        "Intricate Sculptures",
+        "Golden Lotus Pond"
+      ],
+      "activities": [
+        "Temple Visit",
+        "Cultural Exploration",
+        "Photography"
+      ],
+      "temperature": "20-35°C",
+      "description": "A historic temple in Madurai, known for its intricate architecture, vibrant sculptures, and spiritual significance.",
+      "nearest_airport": "Madurai Airport",
+      "popular_events": [
+        "Chithirai Festival"
+      ],
+      "image": "https://i.ytimg.com/vi/7N3tpXssXXg/sddefault.jpg?v=65819109",
+      "category": [
+        "Spirituality",
+        "History",
+        "Culture"
+      ]
+    },
+    {
+      "name": "Konark Sun Temple",
+      "state": "Odisha",
+      "best_month": "November to February",
+      "coordinates": {
+        "latitude": 19.8876,
+        "longitude": 86.0945
+      },
+      "highlights": [
+        "Chariot-Shaped Architecture",
+        "Stone Carvings",
+        "Sun God Worship"
+      ],
+      "activities": [
+        "Historical Exploration",
+        "Photography",
+        "Cultural Study"
+      ],
+      "temperature": "15-25°C",
+      "description": "A UNESCO World Heritage Site, this 13th-century temple in Odisha is an architectural masterpiece dedicated to the Sun God.",
+      "nearest_airport": "Bhubaneswar Airport",
+      "popular_events": [
+        "Konark Dance Festival"
+      ],
+      "image": "https://static.toiimg.com/thumb/width-600,height-400,msid-102580287.cms",
+      "category": [
+        "History",
+        "Culture",
+        "UNESCO Heritage"
+      ]
+    },
+    {
+      "name": "Hampi",
+      "state": "Karnataka",
+      "best_month": "October to March",
+      "coordinates": {
+        "latitude": 15.3350,
+        "longitude": 76.4600
+      },
+      "highlights": [
+        "Virupaksha Temple",
+        "Vijaya Vittala Temple",
+        "Hampi Bazaar"
+      ],
+      "activities": [
+        "Exploring Ruins",
+        "Photography",
+        "Cultural Tours"
+      ],
+      "temperature": "15-30°C",
+      "description": "A UNESCO World Heritage Site in Karnataka, known for its ruins of the Vijayanagara Empire and stunning temples.",
+      "nearest_airport": "Hubli Airport",
+      "popular_events": [
+        "Hampi Utsav"
+      ],
+      "image": "https://www.stayvista.com/blog/wp-content/uploads/2024/09/Hampi_karnataka.jpg",
+      "category": [
+        "History",
+        "Culture",
+        "UNESCO Heritage"
+      ]
+    },
+    {
+      "name": "Rameswaram",
+      "state": "Tamil Nadu",
+      "best_month": "October to April",
+      "coordinates": {
+        "latitude": 9.2880,
+        "longitude": 79.3129
+      },
+      "highlights": [
+        "Ramanathaswamy Temple",
+        "Pamban Bridge",
+        "Dhanushkodi Beach"
+      ],
+      "activities": [
+        "Pilgrimage",
+        "Exploring Beaches",
+        "Photography"
+      ],
+      "temperature": "20-32°C",
+      "description": "A sacred town in Tamil Nadu, famous for the Ramanathaswamy Temple and its connection to the Ramayana.",
+      "nearest_airport": "Madurai Airport",
+      "popular_events": [
+        "Maha Shivaratri Festival"
+      ],
+      "image": "https://apnayatra.com/wp-content/uploads/2023/07/Rameshwaram-Jyotirlinga-Shivam-Temple0.jpg",
+      "category": [
+        "Spirituality",
+        "Pilgrimage",
+        "Coastal"
+      ]
+    },
+    {
+      "name": "Kedarnath",
+      "state": "Uttarakhand",
+      "best_month": "May to October",
+      "coordinates": {
+        "latitude": 30.7351,
+        "longitude": 79.0669
+      },
+      "highlights": [
+        "Kedarnath Temple",
+        "Himalayan Views",
+        "Mandakini River"
+      ],
+      "activities": [
+        "Pilgrimage",
+        "Trekking",
+        "Photography"
+      ],
+      "temperature": "-2-15°C",
+      "description": "It is the most remote of the four Chota Char Dham pilgrimage sites. It is located in the Himalayas, about 3,583 m (11,755 ft) above sea level.",
+      "nearest_airport": "Jolly Grant Airport, Dehradun",
+      "popular_events": [
+        "Kedarnath Opening Ceremony"
+      ],
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJbH-AlG-vOK_9EztcM3sSQ_ikj3816FoOjw&s",
+      "category": [
+        "Spirituality",
+        "Pilgrimage",
+        "Adventure"
       ]
     }
   ]

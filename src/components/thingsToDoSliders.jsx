@@ -12,49 +12,53 @@ import { CiLocationOn } from "react-icons/ci";
 
 
 import PlaceContext from './contextApi'
-      
+
 function Things() {
 
-      const scroll = useRef();      
+      const scroll = useRef();
 
       function scrolltoLeft() {
-            scroll.current.scrollLeft -= 570;            
+            scroll.current.scrollLeft -= 570;
       }
       function scrolltoRight() {
             scroll.current.scrollLeft += 570;
       }
 
+      const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      const d = new Date();
+      let month = months[d.getMonth()]
+
       return (
-            <div className="thisMonth">                  
+            <div className="thisMonth">
                   <div className="d-flex justify-content-between">
-                        <div><h1>Places To Visit This <span>Month</span></h1></div>
+                        <div><h1>Best Places To Visit This {month.toUpperCase()}</h1></div>
                         <div className="d-flex align-items-center">
                               <div>
-                                    <Button style={{backgroundColor:'#8B008B'}} onClick={scrolltoLeft}> <FaArrowCircleLeft /> </Button>
-                                    <Button style={{backgroundColor:'#8B008B'}} onClick={scrolltoRight}> <FaArrowCircleRight /> </Button>
+                                    <Button style={{ backgroundColor: '#8B008B' }} onClick={scrolltoLeft}> <FaArrowCircleLeft /> </Button>
+                                    <Button style={{ backgroundColor: '#8B008B' }} onClick={scrolltoRight}> <FaArrowCircleRight /> </Button>
                               </div>
-                              
+
                         </div>
                   </div>
-                  
+
                   <div className="thisMonthItems" ref={scroll}>
-                        {data.places_to_visit.map((place, index) => (
-                              <Card>
-                                    <Card.Img variant="top" height='300' src={place.image} />
+                        {data[month].map((place, index) => (
+                              <Card key={index}>
+                                    <Card.Img variant="top" style={{height:"40vh"}} src={place.image} />
 
                                     <Card.ImgOverlay>
-                                          
-                                          {place.activities.map((activity)=>(
+
+                                          {place.activities.map((activity) => (
                                                 <Card.Text className="text-wrap text-break">
                                                       {activity}
                                                 </Card.Text>
                                           ))}
-                                          
+
                                     </Card.ImgOverlay>
 
                                     <Card.Body>
                                           <Card.Text className="row">
-                                                <div style={{color:'#8B008B'}} className="col-sm-12 col-lg-6 text-sm-start fw-bold"><CiLocationOn /> {place.name}, {place.state}</div>
+                                                <div style={{ color: '#8B008B' }} className="col-sm-12 col-lg-6 text-sm-start fw-bold"><CiLocationOn /> {place.name}, {place.state}</div>
                                                 <div className="col-sm-12 col-lg-6 text-sm-start text-lg-end"> <MdFlightTakeoff /> {place.nearest_airport}</div>
                                           </Card.Text>
                                           <Card.Text className="text-wrap text-break">
@@ -64,9 +68,9 @@ function Things() {
 
                                                 <div className="col-6 text-start fw-bold"> {place.category[0]} </div>
                                                 <div className="col-6 text-end"> {place.temperature} </div>
-                                    
+
                                           </Card.Text>
-                                          <Button size="sm" style={{backgroundColor:'#8B008B'}}>explore more</Button>
+                                          <Button size="sm" style={{ backgroundColor: '#8B008B' }}>explore more</Button>
                                     </Card.Body>
                               </Card>
 

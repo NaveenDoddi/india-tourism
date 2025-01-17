@@ -1,5 +1,7 @@
 import LeafletMap from "./LeafletMap"
-import data from './mapdata.json'
+// import data from './mapdata.json'
+import data from './monthly_wise_data.json'
+
 import { useState } from "react"
 
 function MapSection() {
@@ -24,8 +26,9 @@ function MapSection() {
                                     latitude={place.coordinates.latitude}
                                     longitute={place.coordinates.longitude}
                                     description={place.description}
-                                    imageUrl={place.imageUrl}
+                                    imageUrl={place.image}
                                     name = {place.name}
+                                    state = {place.state}
                               />
                         </div>
 
@@ -33,7 +36,7 @@ function MapSection() {
                               {data.mapdata.map((place, index) => {
                                     return (
                                           <div className="placeCard" key={index} onClick={() => locateOnMap(place)}>
-                                                <img src={place.imageUrl} alt="" />
+                                                <img src={place.image} alt="" />
                                                 <h6>{place.name}</h6>
                                                 <p>{place.description}</p>
                                           </div>

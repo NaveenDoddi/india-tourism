@@ -1,19 +1,19 @@
 import React, { useEffect } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-
+import markerIcon from "leaflet/dist/images/marker-icon.png";
 function LeafletMap(props) {
 
       useEffect(() => {
             const map = L.map("map").setView([props.latitude, props.longitute], 5);
 
             L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-                  attribution: '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+                  
             }).addTo(map);
 
             const defaultIcon = L.icon({
-                  iconUrl: props.imageUrl,
-                  iconSize: [41, 41, 50],
+                  iconUrl: markerIcon,
+                  iconSize: [21, 31],
                   iconAnchor: [12, 41],
                   popupAnchor: [1, -34],
             });
@@ -21,7 +21,9 @@ function LeafletMap(props) {
 
             const marker = L.marker([props.latitude, props.longitute]).addTo(map);
             marker.bindPopup(`
+                  <img src=${props.imageUrl} height=60 style="border-radius:'50%'" />
                   <h6>${props.name}</h6>
+                  <span>${props.state}</span>
                   `);
 
             return () => map.remove();
