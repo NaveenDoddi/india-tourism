@@ -21,7 +21,10 @@ function LeafletMap(props) {
 
             const marker = L.marker([props.latitude, props.longitute]).addTo(map);
             marker.bindPopup(`
-                  <img src=${props.imageUrl} height=60 style="border-radius:'50%'" />
+                  <div>
+
+                        <img src=${props.imageUrl} height=60/>
+                  </div>
                   <h6>${props.name}</h6>
                   <span>${props.state}</span>
                   `);
