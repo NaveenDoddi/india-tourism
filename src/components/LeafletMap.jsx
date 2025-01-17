@@ -26,6 +26,7 @@ function LeafletMap(props) {
                   <span>${props.state}</span>
                   `);
 
+                  
             return () => map.remove();
       }, [props.latitude, props.longitute, props.description]); // Dependencies for re-rendering
 
