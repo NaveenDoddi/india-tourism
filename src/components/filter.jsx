@@ -1,9 +1,10 @@
 import React, { useState, createContext } from 'react';
+import SearchedPlaces from './searchedPlaces';
 
 function Filter(children) {
 
       const [country, setState] = useState("Andhra Pradesh")
-      const [place, setPlace] = useState("")
+      const [place, setPlace] = useState(null)
       var list = {
             'Andhra Pradesh': ["Tirupati", "Araku Valley", "Vishakhapatnam", "Amaravati", "Lepakshi", "Horsley Hills", "Srikalahasti"],
             'Arunachal Pradesh': ["Tawang", "Ziro Valley", "Sela Pass", "Namdapha National Park", "Itanagar", "Bomdila", "Dirang"],
@@ -22,6 +23,7 @@ function Filter(children) {
             'Manipur': ["Loktak Lake", "Imphal", "Kangla Fort", "Keibul Lamjao National Park", "Ukhrul", "Andro Village", "Thoubal"],
             'Meghalaya': ["Cherrapunji", "Shillong", "Mawlynnong", "Living Root Bridges", "Nongriat", "Umiam Lake", "Dawki"],
             'Mizoram': ["Aizawl", "Dampa Tiger Reserve", "Champhai", "Lunglei", "Reiek", "Vantawng Falls", "Hmuifang"],
+            // fkdfj
             'Nagaland': ["Kohima", "Dzükou Valley", "Dimapur", "Mon", "Shilloi Lake", "Khonoma Village", "Japfu Peak"],
             'Odisha': ["Konark Sun Temple", "Puri", "Chilika Lake", "Bhubaneswar", "Dhauli", "Simlipal National Park", "Raghurajpur"],
             'Punjab': ["Golden Temple", "Jallianwala Bagh", "Wagah Border", "Anandpur Sahib", "Patiala", "Ranjit Sagar Dam", "Kapurthala"],
@@ -37,27 +39,31 @@ function Filter(children) {
       };
 
       return (
-            <div className='filterDropdown row'>
-                  <select className='col-12 col-md-6' onChange={(e) => setState(e.target.value)}>
-                        <option>Select State</option>
-                        {Object.keys(list).map((key) => {
-                              return (
-                                    <option value={key}>{key}</option>
-                              )
-                        })}
-                  </select>
+            <div>
 
-                  <select className='col-12 col-md-6' onChange={(e) => setPlace(e.target.value)}>
-                        <option>Select Place</option>
-                        {list[country].map((city) => {
-                              return (<option>{city}</option>)
-                        })}
-                  </select>
+                  <div className='filterDropdown row'>
+                        <select className='col-12 col-md-6' onChange={(e) => setState(e.target.value)}>
+                              <option>Select State</option>
+                              {Object.keys(list).map((value, key) => {
+                                    return (
+                                          <option key={key} value={value}>{value}</option>
+                                    )
+                              })}
+                        </select>
 
-                  <div className='col-12 d-flex justify-content-center'>
-                        <input type="text" id="" placeholder='Search By Place' onChange={(e) => setPlace(e.target.value)} />
+                        <select className='col-12 col-md-6' onChange={(e) => setPlace(e.target.value)}>
+                              <option>Select Place</option>
+                              {list[country].map((city, key) => {
+                                    return (<option key={key}>{city}</option>)
+                              })}
+                        </select>
+
+                        <div className='col-12 d-flex justify-content-center'>
+                              <input type="text" id="" placeholder='Search By Place' onChange={(e) => setPlace(e.target.value)} />
+                        </div>
+
                   </div>
-
+                  {place && <SearchedPlaces placeName = {place} />}
             </div>
       )
 }

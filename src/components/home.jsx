@@ -13,8 +13,8 @@ function Home() {
                   <Landing />
                   <Things />
                   <MapSection />
-                  <Filter />
                   <LandVedio />
+                  <Filter />
             </>
       )
 }

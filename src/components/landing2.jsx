@@ -3,7 +3,7 @@
 function LandVedio() {
       return (
             <div>
-                  <div className="video-container">
+                  <div className="video-container mt-5">
                         <video autoPlay loop muted playsInline className="background-video">
                               <source src="images/video.mp4" type="video/mp4" />
                               Your browser does not support the video tag.
