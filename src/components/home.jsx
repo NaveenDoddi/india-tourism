@@ -9,11 +9,11 @@ import MapSection from "./map"
 function Home() {
       return (
             <>
-                  <Header />
+                  {/* <Header />
                   <Landing />
                   <Things />
                   <MapSection />
-                  <LandVedio />
+                  <LandVedio /> */}
                   <Filter />
             </>
       )

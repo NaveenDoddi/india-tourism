@@ -48,8 +48,8 @@ function Things() {
 
                                     <Card.ImgOverlay>
 
-                                          {place.activities.map((activity) => (
-                                                <Card.Text className="text-wrap text-break">
+                                          {place.activities.map((activity, key) => (
+                                                <Card.Text key={key} className="text-wrap text-break">
                                                       {activity}
                                                 </Card.Text>
                                           ))}
