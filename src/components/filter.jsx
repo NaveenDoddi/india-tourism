@@ -1,5 +1,5 @@
 import React, { useState, createContext } from 'react';
-import SearchedPlaces from './searchedPlaces';
+import SetupWikiData from './setup_wikidata';
 
 function Filter(children) {
 
@@ -63,7 +63,7 @@ function Filter(children) {
                         </div>
 
                   </div>
-                  {place && <SearchedPlaces placeName = {place} />}
+                  {place && <SetupWikiData placeName = {place} />}
             </div>
       )
 }

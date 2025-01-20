@@ -6,15 +6,18 @@ import Things from './thingsToDoSliders'
 import Filter from "./filter"
 import LandVedio from "./landing2"
 import MapSection from "./map"
+import SearchedPlaces from "./searchedPlaces"
 function Home() {
       return (
             <>
-                  {/* <Header />
+                  <Header />
                   <Landing />
                   <Things />
                   <MapSection />
-                  <LandVedio /> */}
+                  <LandVedio /> 
                   <Filter />
+
+                  {/* <SearchedPlaces /> */}
             </>
       )
 }
