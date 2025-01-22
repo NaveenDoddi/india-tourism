@@ -268,4 +268,41 @@ html, body{
 /* filter ends here */
 
 
-/* searchedPlaces css starts here */
+/* inc-attractions-v1 css starts here */
+
+.inc-attractions{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.div-with-shade {
+    
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px ;
+}
+
+
+
+.div-with-shade div{
+    height: 70vh;
+    min-width: 300px;
+    position: relative;
+    background: no-repeat center center; /* Optional image background */
+    background-size: cover;
+} 
+.div-with-shade img{
+    height: 100%;
+    width: 100%;
+}
+  .div-with-shade div::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%; /* Adjust the height of the gradient */
+    background: linear-gradient(to top, rgb(54, 53, 53), transparent);
+    pointer-events: none;
+  }
+  

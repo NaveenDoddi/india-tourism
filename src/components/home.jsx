@@ -7,17 +7,22 @@ import Filter from "./filter"
 import LandVedio from "./landing2"
 import MapSection from "./map"
 import SearchedPlaces from "./searchedPlaces"
+
+import Attractions from "./attractions"
 function Home() {
       return (
             <>
-                  <Header />
+                  {/* <Header />
                   <Landing />
                   <Things />
                   <MapSection />
                   <LandVedio /> 
-                  <Filter />
+                  <Filter /> */}
 
                   {/* <SearchedPlaces /> */}
+
+
+                  <Attractions />
             </>
       )
 }
