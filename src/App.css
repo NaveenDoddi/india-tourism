@@ -1,11 +1,13 @@
-html, body{
+html,
+body {
     overflow-x: hidden;
 }
 
 .carousel h1 {
     font-family: "myFirstFont";
 }
-.carousel img{
+
+.carousel img {
     height: 95vh;
     width: 100vw;
 }
@@ -69,12 +71,14 @@ html, body{
     * {
         font-size: small;
     }
+
     .carousel h1 {
         font-size: 4.5vh;
-    }  
+    }
+
     .carousel p {
         font-size: 2vh;
-    }  
+    }
 }
 
 /* For medium screens (md) and large screen (lg) */
@@ -82,9 +86,11 @@ html, body{
     .thisMonth .card {
         width: 40vw;
     }
+
     .carousel h1 {
         font-size: 4.5vw;
     }
+
     .carousel p {
         font-size: 2vw;
     }
@@ -151,6 +157,7 @@ html, body{
         overflow: auto;
         scroll-behavior: smooth;
     }
+
     .mapSection .placeCard {
 
         width: 100%;
@@ -269,40 +276,156 @@ html, body{
 
 
 /* inc-attractions-v1 css starts here */
+.inc-attractions-main {
+    background: url('https://www.incredibleindia.gov.in/content/dam/incredible-india/images/global/background-images/attraction-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-.inc-attractions{
-    display: flex;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
+    height: auto;
+    padding: 1%;
+
 }
-.div-with-shade {
+.inc-attractions-main h1{
+    font-weight: bolder;
+    font-size: 4vw;
+}
+.inc-attractions {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    padding-top: 4vh;
     
+}
+
+.inc-attractions-card {
+
     display: flex;
     justify-content: center;
-    padding: 0px 5px ;
+    position: relative;
+    border-radius: 10px;
+
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inc-attractions-card:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4vh);
 }
 
 
-
-.div-with-shade div{
-    height: 70vh;
-    min-width: 300px;
+.inc-attractions-image-container {
+    
+    /* min-width: 300px; */
     position: relative;
-    background: no-repeat center center; /* Optional image background */
-    background-size: cover;
-} 
-.div-with-shade img{
+    border-radius: 10px;
+}
+
+.inc-attractions-card img {
     height: 100%;
     width: 100%;
+    border-radius: 10px;
+    display: block;
 }
-  .div-with-shade div::after {
+
+.inc-attractions-card div::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 50%; /* Adjust the height of the gradient */
-    background: linear-gradient(to top, rgb(54, 53, 53), transparent);
+    height: 50%;
+    /* Adjust the height of the gradient */
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
     pointer-events: none;
-  }
-  
+    border-radius: 10px;
+}
+
+.inc-attractions-heading {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    padding: 15%;
+    text-align: center;
+}
+
+.inc-attractions-heading button{
+    display: none;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.inc-attractions-card +.inc-attractions-heading button{
+    display: block;
+}
+
+.inc-attractions-control-btns svg{
+    height: 1rem !important;
+    /* width:   ; */
+
+}
+
+
+@media (max-width: 425px) {
+
+    /* Extra small screens (xs) */
+    .inc-attractions-image-container {
+        width: 98vw;
+        margin: 0.5vw;
+    }
+
+    .inc-attractions-main {
+        padding: 3.5vw;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+
+    /* Medium screens (md) */
+    .inc-attractions-image-container {
+        width: 46vw;
+        margin: 0.5vw;
+    }
+
+    .inc-attractions-main {
+        padding: 3.5vw;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Large screens (lg) */
+    .inc-attractions-image-container {
+        width: 30vw;
+        margin: 0.5vw;
+    }
+
+    .inc-attractions-main {
+        padding: 3.5vw;
+    }
+}
+
+@media (min-width: 991px) {
+
+    /* Large screens (lg) */
+    .inc-attractions-image-container {
+        width: 25vw;
+        margin: 0 0.5vw;
+    }
+
+    .inc-attractions-main {
+        padding: 11vw;
+    }
+
+}
+
+
+
+
+
