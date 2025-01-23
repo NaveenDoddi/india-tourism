@@ -7,8 +7,8 @@ body {
     font-family: "myFirstFont";
 }
 
-.carousel img {
-    height: 95vh;
+.mainPageBanner .carousel img {
+    height: 90vh;
     width: 100vw;
 }
 
@@ -20,6 +20,14 @@ body {
 @font-face {
     font-family: myFirstFont;
     src: url('/public/fonts/TheCircousStriped.ttf') format('truetype');
+}
+
+.discoverMoreBtn {
+    background-color: red;
+    color: white;
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+    font-weight: bold
 }
 
 
@@ -285,17 +293,19 @@ body {
     padding: 1%;
 
 }
-.inc-attractions-main h1{
+
+.inc-attractions-main h1 {
     font-weight: bolder;
     font-size: 4vw;
 }
+
 .inc-attractions {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
 
     padding-top: 4vh;
-    
+
 }
 
 .inc-attractions-card {
@@ -305,7 +315,7 @@ body {
     position: relative;
     border-radius: 10px;
 
-    
+
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -317,7 +327,7 @@ body {
 
 
 .inc-attractions-image-container {
-    
+
     /* min-width: 300px; */
     position: relative;
     border-radius: 10px;
@@ -355,16 +365,17 @@ body {
     text-align: center;
 }
 
-.inc-attractions-heading button{
+.inc-attractions-heading button {
     display: none;
     transform: translateX(-50%);
     position: absolute;
 }
-.inc-attractions-card +.inc-attractions-heading button{
+
+.inc-attractions-card+.inc-attractions-heading button {
     display: block;
 }
 
-.inc-attractions-control-btns svg{
+.inc-attractions-control-btns svg {
     height: 1rem !important;
     /* width:   ; */
 
@@ -425,7 +436,41 @@ body {
 
 }
 
+/* inc-attractions-v1 css ends here */
 
 
 
+/* city_page_banner */
 
+.CityPageContent>div:first-child {
+    display: block !important;
+}
+
+
+/* Style for the numeric slide indicator */
+.city_page_banner .custom-slide-indicator {
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.CityPageContent>div:first-child {
+    display: block !important;
+}
+
+.CityPageContent > div{
+    padding: 5%;
+    
+}
+
+.CityPageContent h3 {
+    font-weight: bold;
+
+}

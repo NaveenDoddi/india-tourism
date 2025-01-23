@@ -9,6 +9,8 @@ import MapSection from "./map"
 import SearchedPlaces from "./searchedPlaces"
 
 import Attractions from "./attractions"
+
+import CityPage from "./city_page"
 function Home() {
       return (
             <>
@@ -20,9 +22,11 @@ function Home() {
                   <Filter /> */}
 
                   {/* <SearchedPlaces /> */}
-
-
-                  <Attractions />
+                  {/* <Header /> */}
+                  <CityPage />
+                  {/* <Landing /> */}
+                  
+                  {/* <Attractions /> */}
             </>
       )
 }

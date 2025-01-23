@@ -1,6 +1,6 @@
 import React from "react";
 
-function DiscoverBtn() {
+function DiscoverBtn(props) {
 
       const btn_style = { 
             backgroundColor: 'red', 
@@ -13,7 +13,7 @@ function DiscoverBtn() {
       return (
             <div>
                   <span className="btn mt-4" style={btn_style}>
-                        Discover More
+                        {props.text}
                   </span>
             </div>
       )
