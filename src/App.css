@@ -442,11 +442,6 @@ body {
 
 /* city_page_banner */
 
-.CityPageContent>div:first-child {
-    display: block !important;
-}
-
-
 /* Style for the numeric slide indicator */
 .city_page_banner .custom-slide-indicator {
     position: absolute;
