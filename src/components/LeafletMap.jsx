@@ -3,7 +3,7 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 function LeafletMap(props) {
-
+      
       useEffect(() => {
             const map = L.map("map").setView([props.latitude, props.longitute], 5);
 
@@ -17,6 +17,7 @@ function LeafletMap(props) {
                   iconAnchor: [12, 41],
                   popupAnchor: [1, -34],
             });
+
             L.Marker.prototype.options.icon = defaultIcon;
 
             const marker = L.marker([props.latitude, props.longitute]).addTo(map);

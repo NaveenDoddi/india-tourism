@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
 
-const CustomCarousel = ({ images, names }) => {
+const CityPageBanner = ({ images, names }) => {
       const [activeIndex, setActiveIndex] = useState(0); // Track the active slide
 
       const handleSelect = (selectedIndex) => {
@@ -27,14 +27,19 @@ const CustomCarousel = ({ images, names }) => {
                                                 filter: "brightness(0.8) contrast(0.8) saturate(0.9)",
                                           }}
                                     />
-                                    <Carousel.Caption style={{ position: 'absolute', top: '60%', left: '-35%' , display: index === 0 ? 'block':'none'}}>
+                                    <Carousel.Caption style={{ position: 'absolute', top: '30%', left: '-30%', display: index === 0 ? 'block' : 'none' }}>
                                           <p>{names[1]}</p>
                                           <h1>{names[0]}</h1>
                                     </Carousel.Caption>
 
-                                    <div className="custom-slide-indicator">
-                                          {activeIndex + 1} / {images.length}
+
+                                    <div className="d-flex justify-content-center">
+                                          <div className="custom-slide-indicator">
+                                                {activeIndex + 1} / {images.length}
+                                          </div>
                                     </div>
+
+
                               </Carousel.Item>
                         ))}
                   </Carousel>
@@ -42,4 +47,4 @@ const CustomCarousel = ({ images, names }) => {
       );
 };
 
-export default CustomCarousel;
+export default CityPageBanner;

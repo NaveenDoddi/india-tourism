@@ -2,17 +2,30 @@ import React from "react"
 
 import CityPageBanner from "./city_page_banner";
 import CityPageContent from "./city_page_content";
+import LeafletMap from "./LeafletMap";
+import CityPageWeather from "./city_page_weather";
+import CityPageTravel from "./city_page_travel";
 
 function CityPage() {
       const data = {
             name: ['Taj Mahal', 'Uttar Pradesh'],
+            map:
+            {
+                  'latitude': 27.1804262624159,
+                  'longitude': 78.0036966270024,
+                  'description': 'fsfd',
+                  'imageUrl': 'https://s7ap1.scene7.com/is/image/incredibleindia/taj-mahal-agra-uttar-pradesh-1-attr-hero?qlt=82&ts=1726650384852',
+                  'name': 'Taj Mahal',
+                  'state': 'Uttar Pradesh'
+            }
+            ,
             images: [
                   'https://s7ap1.scene7.com/is/image/incredibleindia/taj-mahal-agra-uttar-pradesh-1-attr-hero?qlt=82&ts=1726650384852',
                   'https://s7ap1.scene7.com/is/image/incredibleindia/taj-mahal-agra-uttar-pradesh-2-attr-hero?qlt=82&ts=1726650323712',
             ],
             travel: [
-                  { 'Major Airports :': [Array] },
-                  { 'Nearest Railway Station :': [Array] }
+                  { 'Major Airports :': ['Agra Airport (AGR) Indira Gandhi', 'International Airport (DEL)'] },
+                  { 'Nearest Railway Station :': ['Agra City Railway Station (AGA)'] }
             ],
             city_map_img: [
                   'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='
@@ -146,12 +159,32 @@ function CityPage() {
       }
       return (
 
-            <div>
-                  <CityPageBanner names={data.name} images={data.images} />
-                  <div className="row">
-                        <div className="col-12 col-md-8">
+            <div className="city_page">
+                  <div>
+                        <CityPageBanner names={data.name} images={data.images} />
+                  </div>
+
+                  <div className="row city_page_content_map">
+                        <div className="col-11 col-sm-6 col-md-7 col-lg-8 mt-5">
                               <CityPageContent content={data.content} />
+
                         </div>
+
+                        <div className="col-11 col-sm-5 col-md-4 col-lg-3 city_page_map">
+                              <LeafletMap
+                                    latitude={data.map.latitude}
+                                    longitute={data.map.longitude}
+                                    description={data.map.description}
+                                    imageUrl={data.map.image}
+                                    name={data.map.name}
+                                    state={data.map.state}
+                              />
+
+                              <CityPageWeather data = {data.weather}/>
+                              <CityPageTravel data = {data.travel}/>
+                        </div>
+
+
                   </div>
 
             </div>

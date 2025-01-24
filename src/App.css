@@ -445,27 +445,62 @@ body {
 /* Style for the numeric slide indicator */
 .city_page_banner .custom-slide-indicator {
     position: absolute;
-    bottom: 20px;
-    right: 50%;
-    background: rgba(0, 0, 0, 0.6);
+    bottom: 8%;
+    /* background: rgba(0, 0, 0, 0.6); */
     color: #fff;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 14px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
     font-weight: bold;
     z-index: 10;
 }
+
 
 .CityPageContent>div:first-child {
     display: block !important;
 }
 
-.CityPageContent > div{
-    padding: 5%;
-    
-}
-
 .CityPageContent h3 {
     font-weight: bold;
 
+}
+
+.city_page_map{
+    transform: translateY(-4vh);
+    
+}
+.city_page_map > * {
+    height: 40vh !important;
+}
+.city_page_content_map{
+    display: flex;
+    justify-content: center;
+
+}
+@media (max-width: 576px) {
+    .city_page_content_map{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.city_page_weather span{
+    font-weight: bold;
+    cursor: pointer;
+    /* text-decoration: underline; */
+
+}
+
+.city_page_weather, .city_page_travel{
+    background-color: #f3f3f3;
+    height: auto !important;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.city_page_travel h6{
+    color: red;
+    font-weight: bold;
 }
