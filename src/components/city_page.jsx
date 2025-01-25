@@ -5,6 +5,9 @@ import CityPageContent from "./city_page_content";
 import LeafletMap from "./LeafletMap";
 import CityPageWeather from "./city_page_weather";
 import CityPageTravel from "./city_page_travel";
+import Attractions from "./attractions";
+import CityPageExperience from "./city_page_experience";
+import Slider1 from "../slider";
 
 function CityPage() {
       const data = {
@@ -26,9 +29,6 @@ function CityPage() {
             travel: [
                   { 'Major Airports :': ['Agra Airport (AGR) Indira Gandhi', 'International Airport (DEL)'] },
                   { 'Nearest Railway Station :': ['Agra City Railway Station (AGA)'] }
-            ],
-            city_map_img: [
-                  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII='
             ],
             weather: [
                   { January: '4.1 - 27.7 °C' },
@@ -74,86 +74,86 @@ function CityPage() {
             ],
             experiences: [
                   {
-                        text: 'Agra beyond Taj – explore lesser-known places of Agra',
+                        name: 'Agra beyond Taj – explore lesser-known places of Agra',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/Agra-Beyond-Taj10-popular?qlt=82&ts=1726650327142',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/agra-beyond-taj-explore-lesser-known'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/agra-beyond-taj-explore-lesser-known'
                   },
                   {
-                        text: 'Magnificent world heritage site Taj Mahal',
+                        name: 'Magnificent world heritage site Taj Mahal',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/Magnificent-World-Heritage-Site-Taj-Mahal5-popular?qlt=82&ts=1726650301912',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/magnificent-world-heritage-site-taj-mahal'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/magnificent-world-heritage-site-taj-mahal'
                   },
                   {
-                        text: 'Taj and beyond - exploring the must-visit spiritual spots in Agra',
+                        name: 'Taj and beyond - exploring the must-visit spiritual spots in Agra',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/Taj-and-Beyond1-popular?qlt=82&ts=1726650329505',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/taj-and-beyond-exploring'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/taj-and-beyond-exploring'
                   },
                   {
-                        text: "Agra's vibrant bazaars",
+                        name: "Agra's vibrant bazaars",
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/meenakari-agra-uttar-pradesh-blog-sho-exp-cit-pop?qlt=82&ts=1726650309531',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/agras-vibrant-bazaars'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/agras-vibrant-bazaars'
                   }
             ],
             nearby: [
                   {
-                        text: 'Mehtab Bagh',
+                        name: 'Mehtab Bagh',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/mehtab-bagh-agra-uttar-pradesh-1-attr-nearby?qlt=82&ts=1726650377064',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/mehtab-bagh'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/mehtab-bagh'
                   },
                   {
-                        text: 'Agra Fort',
+                        name: 'Agra Fort',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/agra-fort-agra-uttar-pradesh-1-attr-nearby?qlt=82&ts=1726650313757',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/agra-fort'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/agra-fort'
                   },
                   {
-                        text: 'Itimad-Ud-Daulah’s Tomb',
+                        name: 'Itimad-Ud-Daulah’s Tomb',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/itmad-ud-daulas-tomb-agra-uttar-pradesh-1-attr-nearby?qlt=82&ts=1726650379676',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/itimad-ud-daulahs-tomb'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/itimad-ud-daulahs-tomb'
                   },
                   {
-                        text: 'Chini Ka Rauza',
+                        name: 'Chini Ka Rauza',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/chini-ka-rauza-agra-uttar-pradesh-1-attr-nearby?qlt=82&ts=1726650355270',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/chini-ka-rauza'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/chini-ka-rauza'
                   },
                   {
-                        text: 'Mariyam’s Tomb',
+                        name: 'Mariyam’s Tomb',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/mariyams-tomb-agra-uttar-pradesh-1-attr-nearby?qlt=82&ts=1726650363147',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/mariams-tomb'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/mariams-tomb'
                   },
                   {
-                        text: 'Ram Bagh',
+                        name: 'Ram Bagh',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/ram-bagh-agra-uttar-pradesh-1-attr-nearby?qlt=82&ts=1726650399027',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/ram-bagh'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/ram-bagh'
                   },
                   {
-                        text: 'Radhasoami Samadhi / Soamibagh Temple',
+                        name: 'Radhasoami Samadhi / Soamibagh Temple',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/radhasoami-samadhi-or-soamibagh-temple-agra-1-attr-nearby?qlt=82&ts=1726650127837',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/radhasoami-samadhi-soamibagh-temple'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/radhasoami-samadhi-soamibagh-temple'
                   },
                   {
-                        text: 'Akbar’s Tomb (Sikandara)',
+                        name: 'Akbar’s Tomb (Sikandara)',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/placeholder-attr-nearby?qlt=82&ts=1727162095257',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/akbar-s-tomb-sikandara'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/akbar-s-tomb-sikandara'
                   },
                   {
-                        text: 'Sikandra',
+                        name: 'Sikandra',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/sikandra-agra-uttar-pradesh-1-attr-nearby?qlt=82&ts=1726650366768',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/sikandra'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/sikandra'
                   },
                   {
-                        text: 'Soor Sarovar Bird Sanctuary',
+                        name: 'Soor Sarovar Bird Sanctuary',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/soor-sarovar-bird-sanctuary-agra-1-attr-nearby?qlt=82&ts=1726650305369',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/soor-sarovar-bird-sanctuary'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/soor-sarovar-bird-sanctuary'
                   },
                   {
-                        text: 'Fatehpur Sikri',
+                        name: 'Fatehpur Sikri',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/fatehpur-sikri-agra-uttar-pradesh-1-attr-nearby?qlt=82&ts=1726650386587',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/fatehpur-sikri'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/fatehpur-sikri'
                   },
                   {
-                        text: 'The National Chambal Sanctuary',
+                        name: 'The National Chambal Sanctuary',
                         image: 'https://s7ap1.scene7.com/is/image/incredibleindia/the-national-chambal-sanctuary-agra-1-attr-nearby?qlt=82&ts=1726650407748',
-                        Url: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/the-national-chambal-sanctuary'
+                        URL: 'https://www.incredibleindia.gov.in/en/uttar-pradesh/agra/the-national-chambal-sanctuary'
                   }
             ]
       }
@@ -185,6 +185,13 @@ function CityPage() {
                         </div>
 
 
+                  </div>
+                  <div className="city_page_attractions">
+                        <Slider1 data = {data.nearby}/>
+                  </div>
+
+                  <div>
+                        <CityPageExperience data = {data.experiences} />
                   </div>
 
             </div>

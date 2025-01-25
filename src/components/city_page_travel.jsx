@@ -12,9 +12,7 @@ function CityPageTravel(props) {
                               
                         </div>
                         <div>
-                              <h6>
-                                    Nearest Railway Station :
-                              </h6>
+                              <h6>Nearest Railway Station :</h6>
                               {props.data[1]['Nearest Railway Station :'].map((i) =>
                               <p>{i}</p>
                               )}

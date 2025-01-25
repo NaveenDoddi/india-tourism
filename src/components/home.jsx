@@ -9,6 +9,7 @@ import MapSection from "./map"
 import SearchedPlaces from "./searchedPlaces"
 
 import Attractions from "./attractions"
+import Slider1 from "../slider"
 
 import CityPage from "./city_page"
 function Home() {
@@ -25,7 +26,7 @@ function Home() {
                   {/* <Header /> */}
                   <CityPage />
                   {/* <Landing /> */}
-                  
+                  {/* <Slider1 /> */}
                   {/* <Attractions /> */}
             </>
       )

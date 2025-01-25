@@ -308,6 +308,12 @@ body {
 
 }
 
+.inc-attractions .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .inc-attractions-card {
 
     display: flex;
@@ -319,19 +325,46 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.inc-attractions-card:hover {
+.inc-attractions-card2 {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 10px 0;
+    position: relative;
+    /* Enables positioning of the heading inside the container */
+
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+
+.inc-attractions-card:hover,
+.inc-attractions-card2:hover {
     cursor: pointer;
     box-shadow: 0 2px 0px rgba(0, 0, 0, 0.2);
     transform: translateY(-4vh);
 }
 
 
-.inc-attractions-image-container {
+.inc-attractions-image-container,
+.inc-attractions-image-container2 {
 
     /* min-width: 300px; */
     position: relative;
     border-radius: 10px;
 }
+
+.inc-attractions-image-container2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 
 .inc-attractions-card img {
     height: 100%;
@@ -340,7 +373,8 @@ body {
     display: block;
 }
 
-.inc-attractions-card div::after {
+.inc-attractions-card div::after,
+.inc-attractions-card2 div::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -353,7 +387,8 @@ body {
     border-radius: 10px;
 }
 
-.inc-attractions-heading {
+.inc-attractions-heading,
+.inc-attractions-heading2 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -364,6 +399,41 @@ body {
     padding: 15%;
     text-align: center;
 }
+
+
+.slick-prev,
+.slick-next {
+    position: absolute !important;
+    bottom: 10px !important;
+    transform: translateY(50%) !important;
+    z-index: 2 !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    color: white;
+    border-radius: 50% !important;
+    width: 30px !important;
+    height: 30px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slick-prev {
+    left: 20%;
+}
+
+.slick-next {
+    right: 20%;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+}
+
 
 .inc-attractions-heading button {
     display: none;
@@ -386,8 +456,13 @@ body {
 
     /* Extra small screens (xs) */
     .inc-attractions-image-container {
-        width: 98vw;
-        margin: 0.5vw;
+        width: 80vw;
+        margin-right: 10px;
+        scroll-snap-align: center;
+    }
+
+    .inc-attractions-card2 {
+        width: 100%;
     }
 
     .inc-attractions-main {
@@ -399,8 +474,12 @@ body {
 
     /* Medium screens (md) */
     .inc-attractions-image-container {
-        width: 46vw;
-        margin: 0.5vw;
+        width: 44.5vw;
+        margin-right: 10px;
+    }
+
+    .inc-attractions-card2 {
+        width: 50%;
     }
 
     .inc-attractions-main {
@@ -415,6 +494,11 @@ body {
     .inc-attractions-image-container {
         width: 30vw;
         margin: 0.5vw;
+    }
+
+    .inc-attractions-card2 {
+
+        width: 33.3%;
     }
 
     .inc-attractions-main {
@@ -465,20 +549,23 @@ body {
 
 }
 
-.city_page_map{
+.city_page_map {
     transform: translateY(-4vh);
-    
+
 }
-.city_page_map > * {
+
+.city_page_map>* {
     height: 40vh !important;
 }
-.city_page_content_map{
+
+.city_page_content_map {
     display: flex;
     justify-content: center;
 
 }
+
 @media (max-width: 576px) {
-    .city_page_content_map{
+    .city_page_content_map {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -486,21 +573,26 @@ body {
     }
 }
 
-.city_page_weather span{
+.city_page_weather span {
     font-weight: bold;
     cursor: pointer;
     /* text-decoration: underline; */
 
 }
 
-.city_page_weather, .city_page_travel{
+.city_page_weather,
+.city_page_travel {
     background-color: #f3f3f3;
     height: auto !important;
     padding: 20px;
     border-bottom: 1px solid black;
 }
 
-.city_page_travel h6{
+.city_page_travel h6 {
     color: red;
     font-weight: bold;
+}
+
+.city_page_attractions>div {
+    background: none;
 }
