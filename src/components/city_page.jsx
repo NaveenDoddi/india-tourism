@@ -7,7 +7,6 @@ import CityPageWeather from "./city_page_weather";
 import CityPageTravel from "./city_page_travel";
 import Attractions from "./attractions";
 import CityPageExperience from "./city_page_experience";
-import Slider1 from "../slider";
 
 function CityPage() {
       const data = {
@@ -186,8 +185,9 @@ function CityPage() {
 
 
                   </div>
+
                   <div className="city_page_attractions">
-                        <Slider1 data = {data.nearby}/>
+                        <Attractions data = {data.nearby}/>
                   </div>
 
                   <div>

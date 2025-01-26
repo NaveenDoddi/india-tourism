@@ -285,16 +285,20 @@ body {
 
 /* inc-attractions-v1 css starts here */
 .inc-attractions-main {
-    background: url('https://www.incredibleindia.gov.in/content/dam/incredible-india/images/global/background-images/attraction-bg.jpg') no-repeat center center;
+    background: url('https://www.incredibleindia.gov.in/content/dam/incredible-india/images/global/background-images/attraction-bg.jpg') no-repeat center center !important;
     background-size: cover;
     background-repeat: no-repeat;
-
     height: auto;
-    padding: 1%;
-
 }
 
-.inc-attractions-main h1 {
+.inc-experience-main{
+    background: url('https://www.incredibleindia.gov.in/content/dam/incredible-india/images/global/background-images/experience-bg.jpg') no-repeat center center !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.inc-attractions-main h1, .inc-experience-main h1 {
     font-weight: bolder;
     font-size: 4vw;
 }
@@ -314,49 +318,33 @@ body {
     align-items: center;
 }
 
-.inc-attractions-card {
-
-    display: flex;
-    justify-content: center;
-    position: relative;
-    border-radius: 10px;
-
-
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.inc-attractions-card2 {
-    width: 25%;
+.inc-attractions-card, .inc-experience-card{
     box-sizing: border-box;
     padding: 5px;
-    margin: 10px 0;
     position: relative;
-    /* Enables positioning of the heading inside the container */
-
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
 
 }
 
 
 
-.inc-attractions-card:hover,
-.inc-attractions-card2:hover {
+.inc-attractions-card:hover, .inc-experience-card:hover {
     cursor: pointer;
-    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.5); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transform: translateY(-4vh);
 }
 
 
-.inc-attractions-image-container,
-.inc-attractions-image-container2 {
-
+.inc-attractions-image-container {
     /* min-width: 300px; */
     position: relative;
     border-radius: 10px;
 }
 
-.inc-attractions-image-container2 img {
+.inc-attractions-image-container img , .inc-experience-image-container img{
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -365,16 +353,7 @@ body {
     border-radius: 10px;
 }
 
-
-.inc-attractions-card img {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-}
-
-.inc-attractions-card div::after,
-.inc-attractions-card2 div::after {
+.inc-attractions-card div::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -387,8 +366,7 @@ body {
     border-radius: 10px;
 }
 
-.inc-attractions-heading,
-.inc-attractions-heading2 {
+.inc-attractions-heading{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -398,6 +376,10 @@ body {
     font-weight: bold;
     padding: 15%;
     text-align: center;
+}
+
+.slick-track{
+    margin-top: 4.5vh;
 }
 
 
@@ -455,16 +437,6 @@ body {
 @media (max-width: 425px) {
 
     /* Extra small screens (xs) */
-    .inc-attractions-image-container {
-        width: 80vw;
-        margin-right: 10px;
-        scroll-snap-align: center;
-    }
-
-    .inc-attractions-card2 {
-        width: 100%;
-    }
-
     .inc-attractions-main {
         padding: 3.5vw;
     }
@@ -473,15 +445,6 @@ body {
 @media (min-width: 425px) and (max-width: 768px) {
 
     /* Medium screens (md) */
-    .inc-attractions-image-container {
-        width: 44.5vw;
-        margin-right: 10px;
-    }
-
-    .inc-attractions-card2 {
-        width: 50%;
-    }
-
     .inc-attractions-main {
         padding: 3.5vw;
     }
@@ -491,16 +454,6 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
 
     /* Large screens (lg) */
-    .inc-attractions-image-container {
-        width: 30vw;
-        margin: 0.5vw;
-    }
-
-    .inc-attractions-card2 {
-
-        width: 33.3%;
-    }
-
     .inc-attractions-main {
         padding: 3.5vw;
     }
@@ -509,11 +462,6 @@ body {
 @media (min-width: 991px) {
 
     /* Large screens (lg) */
-    .inc-attractions-image-container {
-        width: 25vw;
-        margin: 0 0.5vw;
-    }
-
     .inc-attractions-main {
         padding: 11vw;
     }
