@@ -22,7 +22,7 @@ function CityPageContent(props) {
                         </div>
                   )}
                   <div className="d-flex justify-content-end">
-                        <button className="discoverMoreBtn btn" onClick={ReadMore} >
+                        <button className="discover-more-btn btn" onClick={ReadMore} >
                               {readMore ? "Read Less":"Read More"}
                         </button>
                   </div>

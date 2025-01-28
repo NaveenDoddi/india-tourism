@@ -20,7 +20,6 @@ function SearchedPlaces() {
                         }
                         </div>
                         
-
                         {data.info.map((i) => {
                               return (
                                     <div>
@@ -31,9 +30,8 @@ function SearchedPlaces() {
                         })}
                   </div>
 
-
             </div>
       )
 }
 
-export default SearchedPlaces
+export default SearchedPlaces;

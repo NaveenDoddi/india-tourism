@@ -186,12 +186,12 @@ function CityPage() {
 
                   </div>
 
-                  <div className="city_page_attractions">
-                        <Attractions data = {data.nearby}/>
-                  </div>
-
                   <div>
                         <CityPageExperience data = {data.experiences} />
+                  </div>
+                  
+                  <div className="city_page_attractions">
+                        <Attractions data = {data.nearby}/>
                   </div>
 
             </div>

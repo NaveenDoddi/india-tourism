@@ -22,7 +22,7 @@ body {
     src: url('/public/fonts/TheCircousStriped.ttf') format('truetype');
 }
 
-.discoverMoreBtn {
+.discover-more-btn {
     background-color: red;
     color: white;
     padding: 0.7rem 2rem;
@@ -30,51 +30,27 @@ body {
     font-weight: bold
 }
 
-
 /* things to this month starts here */
 
-.thisMonth {
+.home-page-month {
     padding: 2%;
     margin: 2% 0;
 }
 
-.thisMonth h1 {
-    font-weight: bolder;
-    font-size: 4.5vw;
-    margin: 4vh 0;
+.home-page-month .card {
 
-}
-
-.thisMonth .thisMonthItems {
-    overflow: auto;
-    scroll-behavior: smooth;
-    width: 100%;
-    white-space: nowrap;
-    border-bottom: 2px solid rgb(223, 220, 220);
-    gap: 3;
-}
-
-.thisMonth .thisMonthItems>* {
-    margin-right: 10px;
-}
-
-.thisMonth .card {
-    display: inline-block;
-    text-decoration: none;
     border: 2px solid black;
+    height: auto;
 
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    border-radius: 5px;
+}
+.home-page-month_items .card-text > *{
+    margin-top: 5%;
 
-    border-radius: 40px 5px 40px 5px;
 }
 
 /* For small screens (sm) */
 @media (max-width: 576px) {
-    .thisMonth .card {
-        width: 75vw;
-    }
 
     * {
         font-size: small;
@@ -91,9 +67,6 @@ body {
 
 /* For medium screens (md) and large screen (lg) */
 @media (min-width: 576px) {
-    .thisMonth .card {
-        width: 40vw;
-    }
 
     .carousel h1 {
         font-size: 4.5vw;
@@ -108,15 +81,7 @@ body {
     display: none;
 }
 
-.thisMonth.card {
-    position: relative;
-}
-
-.thisMonth .btn {
-    background-color: '#8B008B'
-}
-
-.thisMonth .card-img-overlay {
+.home-page-month .card-img-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -132,7 +97,7 @@ body {
 
 }
 
-.thisMonth .card-img-overlay .card-text {
+.home-page-month .card-img-overlay .card-text {
     font-size: small;
     font-weight: 600;
     color: white;
@@ -151,7 +116,7 @@ body {
 
 .mapSection h6 {
     font-weight: bolder;
-    color: #8B008B;
+    color: red;
 }
 
 
@@ -300,7 +265,7 @@ body {
 
 .inc-attractions-main h1, .inc-experience-main h1 {
     font-weight: bolder;
-    font-size: 4vw;
+    /* font-size: 4vw; */
 }
 
 .inc-attractions {
@@ -318,7 +283,7 @@ body {
     align-items: center;
 }
 
-.inc-attractions-card, .inc-experience-card{
+.inc-attractions-card, .inc-experience-card, .inc-home-page-month-card{
     box-sizing: border-box;
     padding: 5px;
     position: relative;
@@ -330,7 +295,7 @@ body {
 
 
 
-.inc-attractions-card:hover, .inc-experience-card:hover {
+.inc-attractions-card:hover, .inc-experience-card:hover ,.inc-home-page-month-card:hover {
     cursor: pointer;
     /* box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 0.5); */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -351,6 +316,9 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+}
+.inc-experience-image-container img{
+    border-radius: 0px;
 }
 
 .inc-attractions-card div::after {
@@ -437,7 +405,7 @@ body {
 @media (max-width: 425px) {
 
     /* Extra small screens (xs) */
-    .inc-attractions-main {
+    .inc-attractions-main, .inc-experience-main {
         padding: 3.5vw;
     }
 }
@@ -445,7 +413,7 @@ body {
 @media (min-width: 425px) and (max-width: 768px) {
 
     /* Medium screens (md) */
-    .inc-attractions-main {
+    .inc-attractions-main, .inc-experience-main{
         padding: 3.5vw;
     }
 
@@ -454,7 +422,7 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
 
     /* Large screens (lg) */
-    .inc-attractions-main {
+    .inc-attractions-main, .inc-experience-main {
         padding: 3.5vw;
     }
 }
@@ -462,7 +430,7 @@ body {
 @media (min-width: 991px) {
 
     /* Large screens (lg) */
-    .inc-attractions-main {
+    .inc-attractions-main, .inc-experience-main {
         padding: 11vw;
     }
 

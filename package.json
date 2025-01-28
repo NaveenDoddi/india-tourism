@@ -13,12 +13,15 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "bootstrap": "^5.3.2",
+    "buffer": "^6.0.3",
     "cheerio": "^1.0.0",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "leaflet": "^1.9.4",
     "mongoose": "^8.5.2",
+    "path-browserify": "^1.0.1",
+    "querystring-es3": "^0.2.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.9.0",
     "react-dom": "^18.2.0",
@@ -29,13 +32,14 @@
     "react-window": "^1.8.10",
     "recharts": "^2.12.7",
     "slick-carousel": "^1.8.1",
+    "stream-browserify": "^3.0.0",
     "web-vitals": "^2.1.4",
     "window": "^4.2.7"
   },
   "scripts": {
     "start:server": "node server.js",
     "start:react": "react-scripts start",
-    "start": "concurrently \"npm run start:react\"",
+    "start": "concurrently \"npm run start:server\" \"npm run start:react\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -57,5 +61,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "browserify-zlib": "^0.2.0",
+    "react-app-rewired": "^2.2.1"
   }
 }

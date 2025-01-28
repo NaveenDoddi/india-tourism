@@ -12,7 +12,7 @@ function Header() {
     
     return (
         <>
-            <Navbar expand='lg' style={{backgroundColor:'rgba(255, 255, 255, 0.9)'}} data-bs-theme='light' fixed="top">
+            <Navbar expand='lg' style={{backgroundColor:'rgba(0, 0, 0, 0.8)'}} data-bs-theme='dark' fixed="top">
                 <Container fluid >
                     <Navbar.Brand href="#" className='p-0'>
                         <img
