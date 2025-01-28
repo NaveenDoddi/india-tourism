@@ -43,7 +43,14 @@ const IncredibleIndiaAttractions = () => {
                               const text = $(element).find('p.inc-card-text').text();
                               const image = $(element).find('img').attr('src');
                               const Url = $(element).find('a').attr('href');
-            
+
+                              if (image) {
+                                    // Convert relative URLs to absolute URLs
+                                    if (!image.startsWith('http') && !image.startsWith('//')) {
+                                          image = new URL(image, baseUrl).href;
+                                    }
+                              }
+
                               incExperiences.push({
                                     'state' : state,
                                     'crafts' : crafts,
@@ -68,7 +75,7 @@ const IncredibleIndiaAttractions = () => {
 
       return (
             <div>
-                  {/* <Attractions data = {attractions} /> */}
+                  <Attractions data = {attractions} />
                   <div>
                         <CityPageExperience  data = {experiences}/>
                   </div>

@@ -52,8 +52,6 @@ function HomePageMonth() {
             ],
       };
 
-      const scroll = useRef();
-
       const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
       const d = new Date();
       let month = months[d.getMonth()]
@@ -65,11 +63,11 @@ function HomePageMonth() {
                         <h1 className="fw-bold text-center">Best Places To Visit This {month.toUpperCase()}</h1>
                   </div>
 
-                  <div className="home-page-month_items" ref={scroll}>
-                        <Slider {...settings}>
+                  <div className="home-page-month-items" style={{height:"34rem"}}>
+                        <Slider {...settings} >
                               {data[month].map((place, index) => (
-                                    <div className="inc-home-page-month-card">
-                                          <Card key={index} >
+                                    <div className="inc-home-page-month-card" key={index}>
+                                          <Card>
 
                                                 <Card.Img variant="top" style={{ height: "15rem" }} src={place.image} />
 
@@ -83,23 +81,23 @@ function HomePageMonth() {
 
                                                 </Card.ImgOverlay>
 
-                                                <Card.Body style={{ height: "15rem" }} >
+                                                <Card.Body>
                                                       <Card.Text>
                                                             <div className="text-start">
                                                                   <div style={{ color: 'red' }} className="fw-bold"><CiLocationOn /> {place.name}, {place.state}</div>
                                                                   <div> <MdFlightTakeoff /> {place.nearest_airport}</div>
                                                             </div>
 
-                                                            <div>
+                                                            <div className="text-wrap text-break">
                                                                   {place.description}
                                                             </div>
 
-                                                            <div className="row">
-                                                                  <div className="col-7 text-start fw-bold text-wrap text-break"> {place.category[0]} </div>
-                                                                  <div className="col-5 fs-sm"> {place.temperature} </div>
+                                                            <div className="d-flex justify-content-between">
+                                                                  <div className="fw-bold"> {place.category[0]} </div>
+                                                                  <div className=""> {place.temperature} </div>
                                                             </div>
 
-                                                            <Button size="sm" style={{ backgroundColor: 'red', padding:"0.4rem 1rem", fontWeight:"bold", borderRadius:"1rem" }}>Explore</Button>
+                                                            <Button size="sm" style={{ backgroundColor: 'red', padding: "0.4rem 1rem", fontWeight: "bold", borderRadius: "1rem" }}> Explore </Button>
 
                                                       </Card.Text>
 

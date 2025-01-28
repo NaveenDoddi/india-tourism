@@ -40,7 +40,7 @@ function CityPageExperience(props) {
                   },
             ],
       };
-      props.data.map((i, index) => console.log(i['crafts']))
+      props.data.map((i, index) => console.log(i['state']))
 
       return (
             <div className="inc-experience-main">
@@ -56,11 +56,21 @@ function CityPageExperience(props) {
                                           <Card key={index} className="inc-experience-image-container">
                                                 {/* <Card.Img variant="top" src={i['image']} /> */}
                                                 <Card.Body style={{ backgroundColor: "black", color: "white", height: "10rem" }}>
-                                                      {i['state'] ?
-                                                            <Card.Title>{i["state"] | i['crafts']}</Card.Title>
 
-                                                      :""}
-                                                      <Card.Title>{i["text"]}</Card.Title>
+                                                      <Card.Title>
+                                                      {i['state'] ?
+                                                                  <div>
+                                                                        <span style={{color:"red"}} dangerouslySetInnerHTML={{ __html: i['state'].replace(/\n/g, "<br />") }}></span>
+                                                                        &nbsp;|&nbsp;
+                                                                        <span>{i['crafts']}</span>
+                                                                  </div>
+                                                            : ""}
+                                                      </Card.Title>
+                                                      <Card.Text>
+                                                            
+
+                                                            {i["text"]}
+                                                      </Card.Text>
                                                 </Card.Body>
                                           </Card>
                                     </div>
@@ -73,5 +83,6 @@ function CityPageExperience(props) {
             </div>
       )
 }
+
 
 export default CityPageExperience
