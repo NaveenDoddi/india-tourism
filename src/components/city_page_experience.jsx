@@ -48,7 +48,7 @@ function CityPageExperience(props) {
                               {props.data.map((i, index) =>
                                     <div className="inc-experience-card" key={index}>
                                           <Card key={index} className="inc-experience-image-container">
-                                                {/* <Card.Img variant="top" src={i['image']} /> */}
+                                                <Card.Img variant="top" src={i['image']} />
                                                 <Card.Body style={{ backgroundColor: "black", color: "white", height: "11rem" }}>
 
                                                       <Card.Title>
@@ -73,6 +73,10 @@ function CityPageExperience(props) {
 
                         </Slider>
                   </div>
+                  <div className="text-center m-4">
+                        <button className="discover-more-btn btn"> Discover More </button>
+                  </div>
+
 
             </div>
       )

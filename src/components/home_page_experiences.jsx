@@ -49,7 +49,7 @@ function HomePageExperience(props) {
                                     <div className="inc-experience2-card" key={index}>
                                           <Card key={index} className="inc-experience2-image-container">
                                                 <Card.Img variant="top" src={i['image']} />
-                                                <Card.Body style={{height: "8rem" }}>
+                                                <Card.Body style={{height: "9rem" }}>
                                                       <Card.Text>
                                                             <div style={{ color: "red", fontWeight:"bold", margin:"10px 0" }}>
                                                                   <span>{i['state']}</span>
@@ -63,6 +63,10 @@ function HomePageExperience(props) {
                               )}
 
                         </Slider>
+                  </div>
+
+                  <div className="text-center m-4">
+                        <button className="discover-more-btn btn"> Discover More </button>
                   </div>
 
             </div>

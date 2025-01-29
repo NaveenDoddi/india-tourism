@@ -39,7 +39,7 @@ body {
 
     h1 {
         font-size: 3.5rem;
-        font-weight: bolder;
+        font-weight: 900 !important;
     }
 
     .carousel p {
@@ -52,7 +52,7 @@ body {
 
     h1 {
         font-size: 4rem;
-        font-weight: bolder;
+        font-weight: 900 !important;
     }
 
     .carousel p {
@@ -122,12 +122,13 @@ body {
 
 /* mapSection css starts here */
 
-.mapSection h1 {
-    font-weight: bolder;
-    font-size: 4vw;
-    margin: 0;
-}
 
+.mapSection {
+    background:url('https://www.incredibleindia.gov.in/content/dam/incredible-india/images/global/background-images/itineraries-bg.jpg')no-repeat center center !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
 .mapSection h6 {
     font-weight: bolder;
     color: red;

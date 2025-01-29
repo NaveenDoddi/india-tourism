@@ -14,11 +14,10 @@ function MapSection() {
       }
       return (
 
-
             <div className="mapSection">
-                  <div className="ms-4">
+                  <div className="p-4">
                         <h1>Temple Tales</h1>
-                        <h6 className="mb-4">Explore the Rich Heritage of India's Shrines</h6>
+                        <p className="mb-4">Explore the Rich Heritage of India's Shrines</p>
                   </div>
                   <div className="row">
                         <div className="col-12 col-sm-8">

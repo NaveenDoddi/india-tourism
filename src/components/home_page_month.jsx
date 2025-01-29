@@ -60,7 +60,7 @@ function HomePageMonth() {
             <div className="home-page-month">
 
                   <div>
-                        <h1 className="fw-bold text-center">Best Places To Visit This {month.toUpperCase()}</h1>
+                        <h1 className="fw-bold text-start fs-1">Places To Visit This {month.toUpperCase()}</h1>
                   </div>
 
                   <div className="home-page-month-items" style={{height:"34rem"}}>

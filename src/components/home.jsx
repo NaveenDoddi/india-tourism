@@ -15,10 +15,10 @@ import IncredibleIndiaAttractions from "./home_page_scraper"
 function Home() {
       return (
             <>
-                  {/* <Header />
+                  <Header />
                   <Landing />
                   <HomePageMonth />
-                  <MapSection /> */}
+                  <MapSection />
 
                   <IncredibleIndiaAttractions />
                   
