@@ -37,8 +37,9 @@ body {
         font-size: small;
     }
 
-    .carousel h1 {
-        font-size: 4.5vh;
+    h1 {
+        font-size: 3.5rem;
+        font-weight: bolder;
     }
 
     .carousel p {
@@ -49,8 +50,9 @@ body {
 /* For medium screens (md) and large screen (lg) */
 @media (min-width: 576px) {
 
-    .carousel h1 {
-        font-size: 4.5vw;
+    h1 {
+        font-size: 4rem;
+        font-weight: bolder;
     }
 
     .carousel p {
@@ -275,8 +277,13 @@ body {
     height: auto;
 }
 
+.inc-experience2-main{
+    background: linear-gradient(to bottom,  #dc3545 65%, transparent 50%);
+}
+
 .inc-attractions-main h1,
-.inc-experience-main h1 {
+.inc-experience-main h1,
+.inc-experience2-main h1 {
     font-weight: bolder;
     /* font-size: 4vw; */
 }
@@ -298,6 +305,7 @@ body {
 
 .inc-attractions-card,
 .inc-experience-card,
+.inc-experience2-card,
 .inc-home-page-month-card {
     box-sizing: border-box;
     padding: 5px;
@@ -424,7 +432,8 @@ body {
 
     /* Extra small screens (xs) */
     .inc-attractions-main,
-    .inc-experience-main {
+    .inc-experience-main,
+    .inc-experience2-main {
         padding: 3.5vw;
     }
 }
@@ -433,7 +442,8 @@ body {
 
     /* Medium screens (md) */
     .inc-attractions-main,
-    .inc-experience-main {
+    .inc-experience-main, 
+    .inc-experience2-main {
         padding: 3.5vw;
     }
 
@@ -443,7 +453,8 @@ body {
 
     /* Large screens (lg) */
     .inc-attractions-main,
-    .inc-experience-main {
+    .inc-experience-main, 
+    .inc-experience2-main {
         padding: 3.5vw;
     }
 }
@@ -452,8 +463,9 @@ body {
 
     /* Large screens (lg) */
     .inc-attractions-main,
-    .inc-experience-main {
-        padding: 11vw;
+    .inc-experience-main, 
+    .inc-experience2-main {
+        padding: 7vw;
     }
 
 }

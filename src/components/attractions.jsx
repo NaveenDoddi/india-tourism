@@ -43,16 +43,16 @@ const Attractions = (props) => {
 
       return (
             <div className="inc-attractions-main">
-                  <div>
-                        <h1>Attractions</h1>
-                        <p>-- worth a thousand stories --</p>
+                  <div className="text-center text-primary">
+                        <h1>ATTRACTIONS</h1>
+                        <p>─── worth a thousand stories ───</p>
                   </div>
                   <Slider {...settings}>
                         {props.data.map((i, index) =>
                               <div className="inc-attractions-card" key={index}>
 
                                     <div className="inc-attractions-image-container">
-                                          <img src={i['image']} alt="" />
+                                          {/* <img src={i['image']} alt="" /> */}
                                           <div className="inc-attractions-heading">
                                                 {i['name']}
                                           </div>

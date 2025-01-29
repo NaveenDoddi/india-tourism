@@ -17,13 +17,7 @@ function CityPageExperience(props) {
             infinite: true,
             // arrows: false, 
             responsive: [
-                  {
-                        breakpoint: 1024, // For medium screens
-                        settings: {
-                              slidesToShow: 3, // Show 3 slides
-                              // centerPadding: "40px", // Adjust side padding
-                        },
-                  },
+      
                   {
                         breakpoint: 675, // For small screens
                         settings: {
@@ -44,8 +38,8 @@ function CityPageExperience(props) {
 
       return (
             <div className="inc-experience-main">
-                  <div>
-                        <p>- explore -</p>
+                  <div className="text-center text-light">
+                        <p>─── explore ───</p>
                         <h1>EXPERIENCES</h1>
 
                   </div>
@@ -55,11 +49,11 @@ function CityPageExperience(props) {
                                     <div className="inc-experience-card" key={index}>
                                           <Card key={index} className="inc-experience-image-container">
                                                 {/* <Card.Img variant="top" src={i['image']} /> */}
-                                                <Card.Body style={{ backgroundColor: "black", color: "white", height: "10rem" }}>
+                                                <Card.Body style={{ backgroundColor: "black", color: "white", height: "11rem" }}>
 
                                                       <Card.Title>
                                                       {i['state'] ?
-                                                                  <div>
+                                                                  <div style={{ margin:"10px 0" }}>
                                                                         <span style={{color:"red"}} dangerouslySetInnerHTML={{ __html: i['state'].replace(/\n/g, "<br />") }}></span>
                                                                         &nbsp;|&nbsp;
                                                                         <span>{i['crafts']}</span>
